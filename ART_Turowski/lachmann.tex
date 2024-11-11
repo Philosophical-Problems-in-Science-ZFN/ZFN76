@@ -1,530 +1,1024 @@
-\documentclass[12pt]{article}
-%\usepackage{polski}
-%\usepackage[polish]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[OT4]{fontenc}
-\usepackage{fullpage}
-\usepackage{enumitem}
-\usepackage{amsmath}
-\usepackage{color, hyperref}
-\usepackage{appendix}
-\usepackage{indentfirst}
-\usepackage{tikz}
-\usepackage{cleveref}
-\usepackage{todonotes}
-\usepackage{comment}
 
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-    citecolor=black,
-    linkcolor=black
-}
+
+colorlinks=true,
+
+urlcolor=blue,
+
+citecolor=black,
+
+linkcolor=black
+
+
+
+
 
 \PassOptionsToPackage{
+
 backend=biber,
+
 bibencoding=ascii,
+
 language=auto,
+
 style=apa,%chicago-authordate,
+
 sorting=nyt,
-%maxbibnames=3,
+
 natbib=true
-}{biblatex}
-\usepackage{biblatex}
+
+}{biblatex
+
 \bibliography{lachmann}
+
 \DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
 
-\def\plkeywords{\vspace{.5em}{\noindent\bfseries\textit{Słowa kluczowe:}\,\relax}}
-\def\engkeywords{\vspace{.5em}{\noindent\bfseries\textit{Keywords:}\,\relax}}
-\def\endkeywords{\par}
 
-% \setlength{\parindent}{0pt}
-\setlength{\parskip}{1ex}
-\setlength{\marginparwidth}{2cm}
-% \renewcommand{\baselinestretch}{1.8}
+
+\def\plkeywords{\vspace{.5em}{\noindent\bfseries\textit{Słowa kluczowe:}\,\relax}}
+
+\def\engkeywords{\vspace{.5em}{\noindent\bfseries\textit{Keywords:}\,\relax}}
+
+\def
+
+
+
 \setitemize{itemsep=3pt, topsep=1pt, parsep=0pt, partopsep=0pt}
 
-\title{Ludwig Lachmann: a subjectivist institutionalist, but~not a~nihilist}
+
+
+\title{Ludwig Lachmann: a~subjectivist institutionalist, but~not a~nihilist}
+
 \author{Krzysztof Turowski}
-\date{}
+
+
+
+
 
 \begin{document}
 
+
+
 \maketitle
 
-\begin{abstract}
-    The legacy of Ludwig Lachmann within the Austrian School of Economics is subject to several interpretations in the literature: though he clearly considered himself a member of the school and he influenced many Austrian economists, his particular methodological claims prompted Murray Rothbard to disavow him as a nihilist.
 
-    In this article, we defend Lachmann by arguing that to defend his methodological stance he invoked extra-Austrian influences (Max Weber, G.L.S. Shackle). This way, he championed subjectivist institutionalism consistently both in theory and in practice. His approach leaves a peculiar, unorthodox, yet positive legacy for contemporary Austrian economics, not so far from the orthodox Misesian stance as it is broadly understood.
+
+\begin{abstract}
+
+The legacy of Ludwig Lachmann within the Austrian School of Economics is subject to several interpretations in the literature: though he clearly considered himself a~member of the school and he influenced many Austrian economists, his particular methodological claims prompted Murray Rothbard to disavow him as a~nihilist.
+
+
+
+In this article, we defend Lachmann by arguing that to defend his methodological stance he invoked extra-Austrian influences (Max Weber, G.L.S. Shackle). This way, he championed subjectivist institutionalism consistently both in theory and in practice. His approach leaves a~peculiar, unorthodox, yet positive legacy for contemporary Austrian economics, not so far from the orthodox Misesian stance as it is broadly understood.
+
 \end{abstract}
+
+
 
 \engkeywords Ludwig Lachmann, Austrian School of Economics, subjectivism, institutionalism, methodology of economics, financial markets
 
+
+
 \section{Introduction}
 
-Ludwig Lachmann (1906--1990) is definitely one of the most controversial figures within the Austrian School of Economics.
-He came across the writings of Menger while he was studying in Berlin with Werner Sombart, the leader of the last generation of the German Historical School\footnote{Actually, his tutor in Berlin was Emil Kauder, another disciple of Sombart who got interested in Austrian economics \parencite[111]{wasserman-kauder}.}.
-He became so interested in this approach to economics that he eventually went to study at the London School of Economics in the 1930s.
-There he witnessed first-hand the Austrian-Keynesian debates on capital and trade cycle, and the eclipse of Austrian economics by Keynesianism in the UK, as he remained the only young adherent of the thought of Mises and Hayek at the LSE.
-Then, for many years he taught in South Africa, which put him somewhat at a distance from the center of gravity of the Austrian School, which moved to the USA after the Second World War. Despite that, he was still active e.g. with publishing his book \emph{Capital and its Structure} in 1956.
-Ultimately, he came to the forefront when he was invited as one of the three main speakers at the first big post-war Austrian School meeting at the South Royalton Conference in 1974, alongside Murray Rothbard and Israel Kirzner, the most prominent post-war students of Mises.
-Later, throughout the 1970s and 1980s, he was invited every year to the New York University and George Mason University, two important centers of Austrian economics, thus gaining prominence among younger generations of economists gathered there\footnote{For a biographical sketch of Lachmann, see \textcite{mittenmaier}, \textcite{lewin-life}. For personal reminiscences of his students and acquaintances see e.g. \textcite{reminiscences,caldwell,boehm,boehm2000professor}.}.
 
-Lachmann is widely praised by many economists for his works e.g. on capital \parencite{rothbard-present,lewin-life}, entrepreneurship \parencite{endres2013wresting,horwitz-entrepreneurship}, and institutions \parencite{foss2007institutions}. His assessment of the Hayek-Sraffa debate on the theory of cycles also stands out as a lucid restatement of the crux of the dispute, either missed or deliberately obscured by both sides \parencite{gordon-other}.
-He is also perceived as a harsh critic of the dominant general equilibrium paradigm, which he viewed as inferior to the market process perspective, espoused by Mises and his followers.
+
+Ludwig Lachmann (1906--1990) is definitely one of the most controversial figures within the Austrian School of Economics.
+
+He came across the writings of Menger while he was studying in Berlin with Werner Sombart, the leader of the last generation of the German Historical School\footnote{Actually, his tutor in Berlin was Emil Kauder, another disciple of Sombart who got interested in Austrian economics encite[111]{wasserman-kauder}.}.
+
+He became so interested in this approach to economics that he eventually went to study at the London School of Economics in the 1930s.
+
+There he witnessed first-hand the Austrian-Keynesian debates on capital and trade cycle, and the eclipse of Austrian economics by Keynesianism in the UK, as he remained the only young adherent of the thought of Mises and Hayek at the LSE.
+
+Then, for many years he taught in South Africa, which put him somewhat at a~distance from the center of gravity of the Austrian School, which moved to the USA after the Second World War. Despite that, he was still active e.g. with publishing his book \emph{Capital and its Structure} in 1956.
+
+Ultimately, he came to the forefront when he was invited as one of the three main speakers at the first big post-war Austrian School meeting at the South Royalton Conference in 1974, alongside Murray Rothbard and Israel Kirzner, the most prominent post-war students of Mises.
+
+Later, throughout the 1970s and 1980s, he was invited every year to the New York University and George Mason University, two important centers of Austrian economics, thus gaining prominence among younger generations of economists gathered there\footnote{For a~biographical sketch of Lachmann, see \textcite{mittenmaier}, \textcite{lewin-life}. For personal reminiscences of his students and acquaintances see e.g. \textcite{reminiscences,caldwell,boehm,boehm2000professor}.}.
+
+
+
+Lachmann is widely praised by many economists for his works e.g. on capital encite{rothbard-present,lewin-life}, entrepreneurship encite{endres2013wresting,horwitz-entrepreneurship}, and institutions encite{foss2007institutions}. His assessment of the Hayek-Sraffa debate on the theory of cycles also stands out as a~lucid restatement of the crux of the dispute, either missed or deliberately obscured by both sides encite{gordon-other}.
+
+He is also perceived as a~harsh critic of the dominant general equilibrium paradigm, which he viewed as inferior to the market process perspective, espoused by Mises and his followers.
+
+
 
 Yet, the Austrianness of Lachmann is only one side of his work.
-It is also true that he held John Maynard Keynes in much higher regard than any other Austrian School economist. He was also highly influenced by a radical Keynesian George Lennox Sharman Shackle, who is best known for stressing the importance of all-pervasive uncertainty in the world of human affairs for economics.
-Although Lachmann was keen on subscribing himself to the Austrian School of Economics as a follower of Menger, Mises, and Hayek, he was also very eager to look for fruitful interactions with institutionalists or post-Keynesians, both perceived as having congenial insights that could be assimilated to form a broader common approach to the studies of the markets \parencite[8]{lavoie-introduction}.
-Moreover, he was widely known to have strong methodological pronouncements that led Murray Rothbard to disavow him as a nihilist \parencite[52--53]{rothbard-present}.
 
-His peculiar intellectual perspective combined with the influence on many representatives of the Austrian School, especially in the 1980s \parencite[139--140]{vaughn1998austrian}, incited various opinions of his legacy, from highly negative \parencite[82]{rothbard-present} to overwhelmingly positive ones \parencite[1]{lavoie-introduction}.
-This divergence itself raises a question of the proper assessment of the place Ludwig Lachmann occupies within Austrian economics, both for his methodological position and for its relevance to economic practice.
+It is also true that he held John Maynard Keynes in much higher regard than any other Austrian School economist. He was also highly influenced by a~radical Keynesian George Lennox Sharman Shackle, who is best known for stressing the importance of all-pervasive uncertainty in the world of human affairs for economics.
 
-The aim of this article is to argue contra Rothbard that Ludwig Lachmann indeed offered a fruitful positive program for economic research in line with Austrian tradition.
-However, we also recognize a grain of truth in Rothbard's assertion that Lachmann, thanks to his extra-Austrian influences, put strong emphasis on institutions and distanced himself from high theory, and pursued a different route than the people steeped in Austrian economics in the traditions of Mises, Hayek, and Rothbard -- and therefore prone to other kinds of challenges.
+Although Lachmann was keen on subscribing himself to the Austrian School of Economics as a~follower of Menger, Mises, and Hayek, he was also very eager to look for fruitful interactions with institutionalists or post-Keynesians, both perceived as having congenial insights that could be assimilated to form a~broader common approach to the studies of the markets encite[8]{lavoie-introduction}.
+
+Moreover, he was widely known to have strong methodological pronouncements that led Murray Rothbard to disavow him as a~nihilist encite[52--53]{rothbard-present}.
+
+
+
+His peculiar intellectual perspective combined with the influence on many representatives of the Austrian School, especially in the 1980s encite[139--140]{vaughn1998austrian}, incited various opinions of his legacy, from highly negative encite[82]{rothbard-present} to overwhelmingly positive ones encite[1]{lavoie-introduction}.
+
+This divergence itself raises a~question of the proper assessment of the place Ludwig Lachmann occupies within Austrian economics, both for his methodological position and for its relevance to economic practice.
+
+
+
+The aim of this article is to argue contra Rothbard that Ludwig Lachmann indeed offered a~fruitful positive program for economic research in line with Austrian tradition.
+
+However, we also recognize a~grain of truth in Rothbard's assertion that Lachmann, thanks to his extra-Austrian influences, put strong emphasis on institutions and distanced himself from high theory, and pursued a~different route than the people steeped in Austrian economics in the traditions of Mises, Hayek, and Rothbard -- and therefore prone to other kinds of challenges.
+
 Overall, it is best to treat Lachmann as supplementing the main corpus of economic knowledge rather than superseding the praxeological paradigm.
 
+
+
 Our line of reasoning proceeds in three steps.
-First, in \Cref{sec:tenets}, we reconstruct the main tenets of Lachmann's methodology: his radical subjectivism and the primacy of institutions as the guiding posts for actions in the rapidly changing economic world. 
-Next, in \Cref{sec:inspirations} we outline his general view of economics as a science, and we follow up with a section discussing the differences separating him from Mises, Hayek, and Rothbard. We also summarize the intellectual indebtedness of Lachmann to Max Weber and G.L.S. Shackle, and argue that these extra-Austrian influences are both clearly recognizable at the core of his subjectivist-institutionalist methodology, and they are reasons why Rothbard accused Lachmann of being a nihilist and anti-economist.
+
+First, in \Cref{sec:tenets}, we reconstruct the main tenets of Lachmann's methodology: his radical subjectivism and the primacy of institutions as the guiding posts for actions in the rapidly changing economic world.
+
+Next, in \Cref{sec:inspirations} we outline his general view of economics as a~science, and we follow up with a~section discussing the differences separating him from Mises, Hayek, and Rothbard. We also summarize the intellectual indebtedness of Lachmann to Max Weber and G.L.S. Shackle, and argue that these extra-Austrian influences are both clearly recognizable at the core of his subjectivist-institutionalist methodology, and they are reasons why Rothbard accused Lachmann of being a~nihilist and anti-economist.
+
 Finally, in \Cref{sec:finance} we show, contra Rothbard, Lachmann's method in action in his analysis of financial markets. This helps us assess both the strengths and weaknesses of the Lachmannian approach, and its relevance to the main (Misesian-Rothbardian) Austrian economics paradigm.
 
+
+
 \section{Main methodological tenets}
+
 \label{sec:tenets}
 
-Although Lachmann had the same inclination as many other Austrian economists to outline a broader vision of doing social science, extending beyond economics, he did not delve deep into systematic philosophical and anthropological considerations, unlike Mises or Hayek. Neither he published a comprehensive definitive pronouncement of his methodological views as did Mises and Menger.
-It is important to remember that Lachmann started as a capital theorist, and it was the motivation to clear the misunderstandings and get rid of flawed approaches mostly in this area that eventually drew his methodological efforts to the forefront \parencite[215]{prychitko-review}.
 
-His most prominent methodological analyses can be found in a series of articles ranging from the 1940s up to his death, gathered mostly in four books:
+
+Although Lachmann had the same inclination as many other Austrian economists to outline a~broader vision of doing social science, extending beyond economics, he did not delve deep into systematic philosophical and anthropological considerations, unlike Mises or Hayek. Neither he published a~comprehensive definitive pronouncement of his methodological views as did Mises and Menger.
+
+It is important to remember that Lachmann started as a~capital theorist, and it was the motivation to clear the misunderstandings and get rid of flawed approaches mostly in this area that eventually drew his methodological efforts to the forefront encite[215]{prychitko-review}.
+
+
+
+His most prominent methodological analyses can be found in a~series of articles ranging from the 1940s up to his death, gathered mostly in four books:
+
 \begin{itemize}
-    \item \emph{Legacy of Max Weber}, 1970,
-    \item \emph{The Market as an Economic Process}, 1986,
-    \item \emph{Capital, Expectations, and the Market Process}, 1977, a collection of articles from the 1940s to the 1970s, edited by Walter Grinder,
-    \item \emph{Expectations and the Meaning of Institutions}, 2005, a collection of articles from the 1930s to the 1980s, edited by Don Lavoie.
+
+\item \emph{Legacy of Max Weber}, 1970,
+
+\item \emph{The Market as an Economic Process}, 1986,
+
+\item \emph{Capital, Expectations, and the Market Process}, 1977, a~collection of articles from the 1940s to the 1970s, edited by Walter Grinder,
+
+\item \emph{Expectations and the Meaning of Institutions}, 2005, a~collection of articles from the 1930s to the 1980s, edited by Don Lavoie.
+
 \end{itemize}
+
 Unfortunately, in these works many of his particular insights appear only in passing, for example when he is commenting on works of other economists, such as Mises or Shackle. And in more programmatic publications he does not repeat some crucial insights or reservations that nuance his line of reasoning.
+
 Still, we believe that even though Lachmann did not write any work devoted solely to outlining his methodological stance, it is possible to reconstruct the main principles of his methodological stance from these works. And indeed two themes come to the forefront throughout his career: subjectivism and institutions. Let us look at each of them in turn.
+
+
 
 \subsection{Subjectivism}
 
-As it was observed in the literature, if there is one particular stance that can be associated with Lachmann throughout his whole career, it is his often-repeated commitment to subjectivism \parencite[3]{grinder-introduction}. He defined it as
+
+
+
+
+As it was observed in the literature, if there is one particular stance that can be associated with Lachmann throughout his whole career, it is his often-repeated commitment to subjectivism encite[3]{grinder-introduction}. He defined it as
+
 \begin{quote}
-    [t]he postulate that all economic and social phenomena have to be made intelligible by explaining them in terms of human choices and decisions \parencite[10]{lachmann1973macro}.
+
+[t]he postulate that all economic and social phenomena have to be made intelligible by explaining them in terms of human choices and decisions encite[10]{lachmann1973macro}.
+
 \end{quote}
-This includes also uncovering the purpose and the general design of the plan behind observable actions \parencite[71--72]{lachmann-expectations}.
+
+This includes also uncovering the purpose and the general design of the plan behind observable actions encite[71--72]{lachmann-expectations}.
+
+
 
 Subjectivism is for Lachmann the principle of explanation of social sciences, and he tried to push it as far as possible with his agenda of radical subjectivism.
-He quoted with approval several times Hayek's remark that ``every important advance in economic theory during the last hundred years was a further step in the consistent application of subjectivism'' (\cite[155]{lachmann-individualism}; \citeyear[23]{lachmann1986market}; \citeyear[3]{lachmann-shackle-place}, originally in \cite[31]{hayek-counterrevolution}).
-The task of the economist in this view (dubbed ``the market process approach''), is ``to make human action intelligible, to let us understand the nature of the logical structures called `plans', to exhibit the successive modes of thought which give rise to successive modes of action'' \parencite[417]{lachmann-ha}, or simply ``to understand [\ldots] what men do in markets'' \parencite[3]{lachmann1986market}.
-He states that the access to intelligible meaning as social causes gives social scientists an advantage compared to the natural sciences, which he assumes to be confined only to observable uniformities \parencite[90]{lachmann-shackle-time}.
 
-This conceptualization of human action as the subject matter of economics has several further consequences. First, as Lachmann points out, ``each plan is a logical structure in which·means and ends are coordinated by a directing and controlling mind'' \parencite[418]{lachmann-ha}.
+He quoted with approval several times Hayek's remark that ``every important advance in economic theory during the last hundred years was a~further step in the consistent application of subjectivism'' (\cite[155]{lachmann-individualism}; \citeyear[23]{lachmann1986market}; \citeyear[3]{lachmann-shackle-place}, originally in \cite[31]{hayek-counterrevolution}).
+
+The task of the economist in this view (dubbed ``the market process approach''), is ``to make human action intelligible, to let us understand the nature of the logical structures called `plans', to exhibit the successive modes of thought which give rise to successive modes of action'' encite[417]{lachmann-ha}, or simply ``to understand [\ldots] what men do in markets'' encite[3]{lachmann1986market}.
+
+He states that the access to intelligible meaning as social causes gives social scientists an advantage compared to the natural sciences, which he assumes to be confined only to observable uniformities encite[90]{lachmann-shackle-time}.
+
+
+
+This conceptualization of human action as the subject matter of economics has several further consequences. First, as Lachmann points out, ``each plan is a~logical structure in which·means and ends are coordinated by a~directing and controlling mind'' encite[418]{lachmann-ha}.
+
 This dispenses with the possibility that actions in the real world can be considered passive reactions to external incentives, as these would effectively mean abolishing planning altogether.
+
 Next, since the plans are meaningful, this means that not only social scientists but also other agents can understand them and use them in their plans:
+
 \begin{quote}
-    At any moment the actor's mind takes its orientation from (but does not permit its acts to be dictated by) surrounding facts as seen from its perspective, and in the light of this assessment decides on action, making and carrying out plans marked by the distinction between means and ends. [\ldots] [W]hat men adjust their plans to are not observable events as such, but their own interpretations of them and their changing expectations about them \parencite[4]{lachmann1986market}.
+
+At any moment the actor's mind takes its orientation from (but does not permit its acts to be dictated by) surrounding facts as seen from its perspective, and in the light of this assessment decides on action, making and carrying out plans marked by the distinction between means and ends. [\ldots] [W]hat men adjust their plans to are not observable events as such, but their own interpretations of them and their changing expectations about them encite[4]{lachmann1986market}.
+
 \end{quote}
+
 This, in turn, leads him to point out that there are no objective data such as ``tastes'' that can be separated from resources and technological knowledge as an independent exogenous variable (\cite[24]{lachmann1986market}; see also \cite[35]{lachmann-crisis}).
 
-As Lachmann points out, plans are conceived with certain background knowledge about the environment, including both the physical world and the actions of other agents.
-He notes that events happening in the world in their virtue of being observable and understandable may affect our knowledge.
-Our previous actions, and especially our assessment of their success, also influence our current planning.
-However, knowledge has very peculiar properties. As he notes: ``[c]hanges in the constellation of knowledge are an inevitable concomitant of the passing of time'' \parencite[200]{lachmann-hayek}.
-Thus, models assuming a fixed stock of knowledge of agents are essentially timeless.
 
-The subjective character of knowledge acquisition by a human mind implies heterogeneity of knowledge among agents.
-Particular results depend on countless factors e.g. on attitude towards the future (optimists vs. pessimists, bulls vs. bears), and ``no recipe for turning information into knowledge can exist'' \parencite[51]{lachmann1986market}.
-The whole concept of a market of homogeneous units of information flow is deeply flawed and cannot be sustained on this view.
-Any try to incorporate a formal rule of learning is self-defeating since Lachmann argues that such an approach would undermine free will as a plausible working hypothesis concerning human action in general: 
+
+As Lachmann points out, plans are conceived with certain background knowledge about the environment, including both the physical world and the actions of other agents.
+
+He notes that events happening in the world in their virtue of being observable and understandable may affect our knowledge.
+
+Our previous actions, and especially our assessment of their success, also influence our current planning.
+
+However, knowledge has very peculiar properties. As he notes: ``[c]hanges in the constellation of knowledge are an inevitable concomitant of the passing of time'' encite[200]{lachmann-hayek}.
+
+Thus, models assuming a~fixed stock of knowledge of agents are essentially timeless.
+
+
+
+The subjective character of knowledge acquisition by a~human mind implies heterogeneity of knowledge among agents.
+
+Particular results depend on countless factors e.g. on attitude towards the future (optimists vs. pessimists, bulls vs. bears), and ``no recipe for turning information into knowledge can exist'' encite[51]{lachmann1986market}.
+
+The whole concept of a~market of homogeneous units of information flow is deeply flawed and cannot be sustained on this view.
+
+Any try to incorporate a~formal rule of learning is self-defeating since Lachmann argues that such an approach would undermine free will as a~plausible working hypothesis concerning human action in general:
+
 \begin{quote}
-    [f]or how otherwise could they take part in discussions without regarding themselves as mere human gramophones emitting strange but irrelevant noises, and how could they ever hope to ``convince'' anybody else? \parencite[167]{lachmann-science}
+
+[f]or how otherwise could they take part in discussions without regarding themselves as mere human gramophones emitting strange but irrelevant noises, and how could they ever hope to ``convince'' anybody else? encite[167]{lachmann-science}
+
 \end{quote}
+
 In essence, this argument anticipates\footnote{Thus, \textcite[38]{hoppe} is not right in his attribution of primacy to Popper. And though one can see this argument also in \textcite[104]{shackle-time}, it seems that Lachmann got it right first.} \textcite[10]{popper-poverty} by pointing out that if there were causal laws determining human learning and actions, then it would mean the world devoid of meanings and arguments, so only with passive reactions and not actions in the proper sense of the word.
 
+
+
 Lachmann as early as 1943 underlined that not only the current knowledge matters for agents, but even more importantly, their expectations concerning the world and other agents:
+
 \begin{quote}
-    Expectations, it is true, are largely a response to events experienced in the past, but the \emph{modus operandi} of the response is not the same in all cases even of the same experience. This experience, before being transformed into expectations, has, so to speak, to pass through a ``filter'' in the human mind, and the undefinable character of this process makes the outcome of it unpredictable \ldots It follows that they [expectations] have to be regarded as economically indeterminate and cannot be treated as ``variables which it is our task to explain''\cite[67]{lachmann-role-expectations}.
+
+Expectations, it is true, are largely a~response to events experienced in the past, but the \emph{modus operandi} of the response is not the same in all cases even of the same experience. This experience, before being transformed into expectations, has, so to speak, to pass through a~``filter'' in the human mind, and the undefinable character of this process makes the outcome of it unpredictable \ldots It follows that they [expectations] have to be regarded as economically indeterminate and cannot be treated as ``variables which it is our task to explain''\cite[67]{lachmann-role-expectations}.
+
 \end{quote}
+
 The heterogeneity and subjectivity of expectations induced him to reject an attempt by Oskar Lange to find an objective measure of the degree of uncertainty of price expectations (\cite[120]{lachmann-expectations}; see also \cite[422]{van-zijp}).
 
-In a broader perspective, Lachmann viewed the modern history of economic thought as a battlefield between two approaches: subjectivist and formalist -- the first exemplified by Austrians, but also by Post-Keynesians, the second associated typically with general equilibrium framework and Neo-Ricardians \parencite[22--23, 164]{lachmann1986market}.
-The problem with the formalist approach is, as he points out, an assumption of constant relationships, mathematical tractability, and measurability, which dispenses the real causal force of human action, both subjective and changing.
-In Lachmann's own words ``expectations, and other subjective elements, constitute an alien body within the organism of formal model analysis'' \parencite[249]{lachmann-hicks}.
 
-These two views are tied to two meanings of economics distinguished by John Hicks: \emph{plutology}, the science of wealth, and \emph{catallactics}, the science of exchange \parencite[215]{hicks}.
+
+In a~broader perspective, Lachmann viewed the modern history of economic thought as a~battlefield between two approaches: subjectivist and formalist -- the first exemplified by Austrians, but also by Post-Keynesians, the second associated typically with general equilibrium framework and Neo-Ricardians encite[22--23, 164]{lachmann1986market}.
+
+The problem with the formalist approach is, as he points out, an assumption of constant relationships, mathematical tractability, and measurability, which dispenses the real causal force of human action, both subjective and changing.
+
+In Lachmann's own words ``expectations, and other subjective elements, constitute an alien body within the organism of formal model analysis'' encite[249]{lachmann-hicks}.
+
+
+
+These two views are tied to two meanings of economics distinguished by John Hicks: \emph{plutology}, the science of wealth, and \emph{catallactics}, the science of exchange encite[215]{hicks}.
+
 Although there is no one-to-one correspondence, the former is often framed in formalist language, and the latter is more congenial to the subjectivist approach.
-Lachmann accepts this distinction, yet he sees a paradox: neoclassical theory of growth, a contemporary example of plutology, requires capital homogeneity as one of its assumptions, and in doing so it relies on a catallactic framework of general equilibrium of Walras and Pareto \parencite[25--26]{lachmann1986market}.
+
+Lachmann accepts this distinction, yet he sees a~paradox: neoclassical theory of growth, a~contemporary example of plutology, requires capital homogeneity as one of its assumptions, and in doing so it relies on a~catallactic framework of general equilibrium of Walras and Pareto encite[25--26]{lachmann1986market}.
+
+
 
 The emphasis on subjectivity with regard to production plans made Lachmann the harshest critic of all equilibrium approaches among all representatives of the Austrian School.
-He argued that the only meaningful sense of equilibrium in modern economics obtains when an individual (household, firm) acts rationally and exhausts all the gains from removing the inconsistencies between his various plans (\cite[15]{lachmann1973macro}; \citeyear[141]{lachmann1986market}). However, for the whole economy, he seems to be taking exactly the opposite view:
-\begin{quote}
-    In a kaleidic society the equilibrating forces, operating slowly, especially where much of the capital equipment is durable and specific, are always overtaken by unexpected change before they have done their work. [\ldots] Equilibrium of the economic system as a whole will thus never be reached \parencite[60--61]{lachmann-kaleidic}.
-\end{quote}
-His argument was simple: for an individual person (household, firm) we can talk of equilibrium as rationality, consistency of concurrent plans because there is a single organizing unit of agency\footnote{Lachmann actually broadens the legitimate use of equilibrium to include single organized markets or even single industries, as did Marshall (\cite[37]{lachmann-crisis}; \citeyear[149--150]{lachmann-individualism}). However, he does not provide any examples of good and bad uses of the concept in these areas, so it is hard to assess these claims.}.
-However, with a multiplicity of agents, it is a brute fact of life that there is no such unified perspective.
-All capital goods gain meaning only within some production plan and such plans are divergent since they are undertaken by different people. It directly follows that there is no God-like macroeconomic perspective or an objective measure in terms of some appropriately defined quantity that allows the amalgamation of heterogeneous capital goods into a single blob like the macroeconomic $K$ (\cite[175--177]{lachmann-salvage}; \citeyear[194]{lachmann-hayek}; see also \cite{garzarelli}).
 
-One could expect that Lachmann would be more sympathetic to the neoclassical microeconomic theory since it is concentrated on a single decision unit. However, this is not the case. He identifies a pernicious influence of formalism in the assumption of ``independent variables'' of tastes, resources, and technical knowledge, completely unrealistic and removing the true objective of the study of human action from the picture \parencite[217--220]{lachmann-vicissitudes}.
-In the indifference curve approach, a complete scale of preference is assumed, thus action follows by inference. But, as Lachmann asserts, real acting people making genuine choices have limited imagination and they can conceive only several alternative courses of action \parencite[216]{lachmann-vicissitudes}. For similar reasons he suggests that a concept of production function is useless in the world of perpetual change, requiring entrepreneurs to devise and execute their plans \parencite[312]{lachmann-market-distribution}.
+He argued that the only meaningful sense of equilibrium in modern economics obtains when an individual (household, firm) acts rationally and exhausts all the gains from removing the inconsistencies between his various plans (\cite[15]{lachmann1973macro}; \citeyear[141]{lachmann1986market}). However, for the whole economy, he seems to be taking exactly the opposite view:
+
+\begin{quote}
+
+In a~kaleidic society the equilibrating forces, operating slowly, especially where much of the capital equipment is durable and specific, are always overtaken by unexpected change before they have done their work. [\ldots] Equilibrium of the economic system as a~whole will thus never be reached encite[60--61]{lachmann-kaleidic}.
+
+\end{quote}
+
+His argument was simple: for an individual person (household, firm) we can talk of equilibrium as rationality, consistency of concurrent plans because there is a~single organizing unit of agency\footnote{Lachmann actually broadens the legitimate use of equilibrium to include single organized markets or even single industries, as did Marshall (\cite[37]{lachmann-crisis}; \citeyear[149--150]{lachmann-individualism}). However, he does not provide any examples of good and bad uses of the concept in these areas, so it is hard to assess these claims.}.
+
+However, with a~multiplicity of agents, it is a~brute fact of life that there is no such unified perspective.
+
+All capital goods gain meaning only within some production plan and such plans are divergent since they are undertaken by different people. It directly follows that there is no God-like macroeconomic perspective or an objective measure in terms of some appropriately defined quantity that allows the amalgamation of heterogeneous capital goods into a~single blob like the macroeconomic $K$ (\cite[175--177]{lachmann-salvage}; \citeyear[194]{lachmann-hayek}; see also \cite{garzarelli}).
+
+
+
+One could expect that Lachmann would be more sympathetic to the neoclassical microeconomic theory since it is concentrated on a~single decision unit. However, this is not the case. He identifies a~pernicious influence of formalism in the assumption of ``independent variables'' of tastes, resources, and technical knowledge, completely unrealistic and removing the true objective of the study of human action from the picture encite[217--220]{lachmann-vicissitudes}.
+
+In the indifference curve approach, a~complete scale of preference is assumed, thus action follows by inference. But, as Lachmann asserts, real acting people making genuine choices have limited imagination and they can conceive only several alternative courses of action encite[216]{lachmann-vicissitudes}. For similar reasons he suggests that a~concept of production function is useless in the world of perpetual change, requiring entrepreneurs to devise and execute their plans encite[312]{lachmann-market-distribution}.
+
+
 
 \subsection{Importance of institutions}
 
-Lachmann, in line with his upbringing under Werner Sombart, a leader of the last generation of the German Historical School, and with his lasting admiration of Max Weber was always inclined to emphasize the institutional aspect of the economy. As he said late in his life:
-\begin{quote}
-    Few economists will deny that the market operates within a framework of legal and other institutions, that its modus operandi may be helped or hindered by the varying modes of this framework, and that the outcome of market processes will not be unaffected by changes in it. [\ldots] our world is far more complex than was that of the classical economists and [\ldots] there is evidently a good case for having another look at the relationship between the market economy of our days and its institutional basis \parencite[249--250]{lachmann-legislation}
-\end{quote}
-At one point he defines institutions as ``certain superindividual schemes of thought [\ldots] to which the schemes of thought of the first order, the plans, must be oriented'' \parencite[62]{lachmann-significance} and comments that ``designed institutions can be regarded as successful plans which have crystallized into institutions through widespread imitation'' \parencite[81, 89]{lachmann-mises-process}.
-This functional description indicates that he does not want to limit his analysis to organized or legal institutions \parencite[62--63]{lachmann-weber}. Rather under this category there would fall all kinds of associations and norms, just as in the popular contemporary new institutionalist approach \parencite[7--8]{alvesson}.
 
-Institutions perform a very important function within the subjectivist framework: they provide people with means of orientation towards their goals in a more effective way since they ``enable us to rely on the actions of thousands of anonymous others about whose individual purposes and plans we can know nothing'' \parencite[49--50]{lachmann-weber}. In other words,
-\begin{quote}
-  [i]nstitutions reduce uncertainty by circumscribing the range of action of different groups of actors, buyers and sellers, creditors and debtors, employers and employees. We understand how they work by grasping the meaning of the orientation of these groups towards them \parencite[277]{lachmann-hermeneutic}.
-\end{quote}
-For example, we just have to know what a post office does (delivers letters), and we do not need to grasp the plans of any managers or postmen to use this idea to our advantage in our plans\footnote{Although Lachmann would probably say those insights into plan patterns of such people are of course crucial when we try to explain why post offices work in general, or why some are more effective than others.}.
 
-Clearly, institutions do not have an objective character to be inferred e.g. from their physical characteristics, but they are intrinsically intersubjective, and perceived individually by each agent. Thus, the orientation they give, as any other knowledge ``cannot be regarded as a `function' of anything else'' and ''does not fit into a world of `function-maximizing' agents'' \parencite[277]{lachmann-hermeneutic}.
+
+
+Lachmann, in line with his upbringing under Werner Sombart, a~leader of the last generation of the German Historical School, and with his lasting admiration of Max Weber was always inclined to emphasize the institutional aspect of the economy. As he said late in his life:
+
+\begin{quote}
+
+Few economists will deny that the market operates within a~framework of legal and other institutions, that its modus operandi may be helped or hindered by the varying modes of this framework, and that the outcome of market processes will not be unaffected by changes in it. [\ldots] our world is far more complex than was that of the classical economists and [\ldots] there is evidently a~good case for having another look at the relationship between the market economy of our days and its institutional basis encite[249--250]{lachmann-legislation}
+
+\end{quote}
+
+At one point he defines institutions as ``certain superindividual schemes of thought [\ldots] to which the schemes of thought of the first order, the plans, must be oriented'' encite[62]{lachmann-significance} and comments that ``designed institutions can be regarded as successful plans which have crystallized into institutions through widespread imitation'' encite[81, 89]{lachmann-mises-process}.
+
+This functional description indicates that he does not want to limit his analysis to organized or legal institutions encite[62--63]{lachmann-weber}. Rather under this category there would fall all kinds of associations and norms, just as in the popular contemporary new institutionalist approach encite[7--8]{alvesson}.
+
+
+
+Institutions perform a~very important function within the subjectivist framework: they provide people with means of orientation towards their goals in a~more effective way since they ``enable us to rely on the actions of thousands of anonymous others about whose individual purposes and plans we can know nothing'' encite[49--50]{lachmann-weber}. In other words,
+
+\begin{quote}
+
+[i]nstitutions reduce uncertainty by circumscribing the range of action of different groups of actors, buyers and sellers, creditors and debtors, employers and employees. We understand how they work by grasping the meaning of the orientation of these groups towards them encite[277]{lachmann-hermeneutic}.
+
+\end{quote}
+
+For example, we just have to know what a~post office does (delivers letters), and we do not need to grasp the plans of any managers or postmen to use this idea to our advantage in our plans\footnote{Although Lachmann would probably say those insights into plan patterns of such people are of course crucial when we try to explain why post offices work in general, or why some are more effective than others.}.
+
+
+
+Clearly, institutions do not have an objective character to be inferred e.g. from their physical characteristics, but they are intrinsically intersubjective, and perceived individually by each agent. Thus, the orientation they give, as any other knowledge ``cannot be regarded as a~`function' of anything else'' and ''does not fit into a~world of `function-maximizing' agents'' encite[277]{lachmann-hermeneutic}.
+
+
 
 In Lachmann's view, one of the main research problems is the investigation of institutional change. Institutions are good indicators of other people's actions if they are stable and predictable.
+
 However, omnipresent uncertainty and continuous change require that effective institutions have to be also flexible, to adapt to new circumstances. As he writes,
+
 \begin{quote}
-    All institutions are subject to historical change. In the due course, they may on the one hand acquire new functions, while old functions become obsolete [\ldots] it may happen that what was originally quite a sound institution may turn out to become most unsound, or (though I would not know of one example!) it may happen the other way round. \parencite[177]{lachmann1962cost}.
+
+All institutions are subject to historical change. In the due course, they may on the one hand acquire new functions, while old functions become obsolete [\ldots] it may happen that what was originally quite a~sound institution may turn out to become most unsound, or (though I~would not know of one example!) it may happen the other way round. encite[177]{lachmann1962cost}.
+
 \end{quote}
+
+
 
 However, in writing he distances himself from an institutionalist charge against neoclassical economics that the latter is neglecting institutions (\cite[275]{lachmann-hermeneutic}; see also \cite[499]{udehn} comparing Austrians with general equilibrium theorists on this point).
+
 As he points out, after all, markets are institutions too, and there are at least rudimentary theories of property, contract, banking, and finance assumed.
-For example, Lachmann as a market process theorist champions a view that
+
+For example, Lachmann as a~market process theorist champions a~view that
+
 \begin{quote}
-  [I]n a world of continuous change prices are no longer in all circumstances a safe guide to action [\ldots] nevertheless even here price changes do transmit information, though now incomplete information [\ldots] such information, therefore, requires interpretation (the messages have to be ``decoded'') in order to be transformed into knowledge, and all such knowledge is bound to be imperfect knowledge. In a market economy success depends largely on the degree of refinement of one’s instruments of interpretation \parencite[22]{lachmann1956capital}.
+
+[I]n a~world of continuous change prices are no longer in all circumstances a~safe guide to action [\ldots] nevertheless even here price changes do transmit information, though now incomplete information [\ldots] such information, therefore, requires interpretation (the messages have to be ``decoded'') in order to be transformed into knowledge, and all such knowledge is bound to be imperfect knowledge. In a~market economy success depends largely on the degree of refinement of one's instruments of interpretation encite[22]{lachmann1956capital}.
+
 \end{quote}
+
+
 
 In fact, despite all his criticism of the Walrasian paradigm Lachmann conceded that it also cannot be accused of an institution-less approach.
-The only problem is that the ideal types of institutions may be and indeed are ill-designed in their case.
-For example, he even concedes that it may be useful to rely on an auctioneer as an ideal type provided that it is supplemented with comparative studies of real markets in comparison to this ideal type -- but to his disappointment, there was no research in this field \parencite[40--41]{lachmann1986market}.
-Instead, neoclassical economists focus solely on this assumption as a tractable, mathematically convenient axiom for building formal theories. However, as Lachmann notes by doing so, they had to dispense with practical relevance for many important questions about the real world \parencite[142]{lachmann1986market}.
 
-\section{Economics as a subjectivist-institutionalist science}
+The only problem is that the ideal types of institutions may be and indeed are ill-designed in their case.
+
+For example, he even concedes that it may be useful to rely on an auctioneer as an ideal type provided that it is supplemented with comparative studies of real markets in comparison to this ideal type -- but to his disappointment, there was no research in this field encite[40--41]{lachmann1986market}.
+
+Instead, neoclassical economists focus solely on this assumption as a~tractable, mathematically convenient axiom for building formal theories. However, as Lachmann notes by doing so, they had to dispense with practical relevance for many important questions about the real world encite[142]{lachmann1986market}.
+
+
+
+\section{Economics as a~subjectivist-institutionalist science}
+
 \label{sec:inspirations}
 
+
+
 Given these two major themes underlying Lachmann's methodology throughout his whole career, we can coin the phrase ``subjective institutionalism'' to describe this overall outlook.
-In short, it would suggest a research program that would be interested in understanding the economic phenomena in terms of subjective plans of agents, with emphasis on how they are shaped by particular institutions as perceived by these agents.
+
+In short, it would suggest a~research program that would be interested in understanding the economic phenomena in terms of subjective plans of agents, with emphasis on how they are shaped by particular institutions as perceived by these agents.
+
+
 
 Lachmann argues that both the subject matter and the aim of theoretical and historical social sciences are identical since both are concerned with causal explanations of phenomena of the social world (both intended and unintended) in terms of action guided by plans as their causes.
+
 Their only difference lies in the guiding methodological principles.
-However, he does not support the Neo-Kantian division between nomothetic and idiographic sciences but rather opts for pure versus applied sciences as the proper way of framing both types of sciences \parencite[173--175]{lachmann-science}.
+
+However, he does not support the Neo-Kantian division between nomothetic and idiographic sciences but rather opts for pure versus applied sciences as the proper way of framing both types of sciences encite[173--175]{lachmann-science}.
+
+
 
 The tasks of economists and historians are in this view highly complementary.
-Theoreticians contribute analytical schemes of interpretations at different levels of abstractions \parencite[179]{lachmann-science}. In economics they are concerned with (social) causation, thus they have to be constructed according to the ``compositive'' method, i.e. ``analyzing complex phenomena into their simplest elements'' \parencite[172]{lachmann-science}, in this case, individual actions guided by plans.
+
+Theoreticians contribute analytical schemes of interpretations at different levels of abstractions encite[179]{lachmann-science}. In economics they are concerned with (social) causation, thus they have to be constructed according to the ``compositive'' method, i.e. ``analyzing complex phenomena into their simplest elements'' encite[172]{lachmann-science}, in this case, individual actions guided by plans.
+
 Interestingly, he adds that it is hardly an accident that
+
 \begin{quote}
-    has more nearly approached the ideal of a closed theoretical system in which all propositions are linked to each other and the number of fundamental hypotheses reduced to a bare minimum than any other social science \parencite[179]{lachmann-science}.
+
+has more nearly approached the ideal of a~closed theoretical system in which all propositions are linked to each other and the number of fundamental hypotheses reduced to a~bare minimum than any other social science encite[179]{lachmann-science}.
+
 \end{quote}
+
 Theoretical models do not provide predictions, however Lachmann allows for negative prediction in the sense that certain policies could be uncovered as internally inconsistent and thus will be doomed to failure (\cite[89]{lachmann-shackle-time}; see also \cite[7--8]{lachmann-shackle-place}).
 
-A historian, on the other hand, ``endeavors to render his narrative intelligible by means of causal imputation'' \parencite[178]{lachmann-science} i.e. ``to `fill in' the descriptive signs between the logical signs, to tell us what ends by what means men in a given situation pursued'' \parencite[175]{lachmann-science}.
 
-This perspective also comes to the forefront, when Lachmann downplays the importance of \emph{a prioristic} praxeology as purely analytical:
+
+A~historian, on the other hand, ``endeavors to render his narrative intelligible by means of causal imputation'' encite[178]{lachmann-science} i.e. ``to `fill in' the descriptive signs between the logical signs, to tell us what ends by what means men in a~given situation pursued'' encite[175]{lachmann-science}.
+
+
+
+This perspective also comes to the forefront, when Lachmann downplays the importance of \emph{a~prioristic} praxeology as purely analytical:
+
 \begin{quote}
-    [O]ur network of means and ends, precisely by virtue of the logical necessity inherent in it, is impotent to engender empirical generalizations. Its truth is purely abstract and formal. The means and ends it connects are abstract entities. In the real world the concrete means used sought are ever-changing as knowledge changes and what seemed worthwhile yesterday no longer seems so today. We appeal in vain to the logic of means and ends to provide us with support for empirical generalizations of the kind mentioned \parencite[31]{lachmann1986market}.
+
+[O]ur network of means and ends, precisely by virtue of the logical necessity inherent in it, is impotent to engender empirical generalizations. Its truth is purely abstract and formal. The means and ends it connects are abstract entities. In the real world the concrete means used sought are ever-changing as knowledge changes and what seemed worthwhile yesterday no longer seems so today. We appeal in vain to the logic of means and ends to provide us with support for empirical generalizations of the kind mentioned encite[31]{lachmann1986market}.
+
 \end{quote}
 
-However, most of the Lachmannian scorn is directed again towards models, which abandoned the pursuit of describing and accentuating particular significant traits of reality in favor of devising a set of mathematical equations describing some observable relations with parameters as regression coefficients in statistical time series \parencite[35]{lachmann1986market}.
-In passing, he also dispelled the myth that the accumulation of statistical data made much impact on economics, as he noted that there were no recurring patterns of observable variables detected \parencite[177]{lachmann-science}.
 
-The unknowability of the future posits a problem for empirical generalizations, but he does not preclude their existence for some past events, even if only with a narrow scope and character. To quote Lachmann:
+
+However, most of the Lachmannian scorn is directed again towards models, which abandoned the pursuit of describing and accentuating particular significant traits of reality in favor of devising a~set of mathematical equations describing some observable relations with parameters as regression coefficients in statistical time series encite[35]{lachmann1986market}.
+
+In passing, he also dispelled the myth that the accumulation of statistical data made much impact on economics, as he noted that there were no recurring patterns of observable variables detected encite[177]{lachmann-science}.
+
+
+
+The unknowability of the future posits a~problem for empirical generalizations, but he does not preclude their existence for some past events, even if only with a~narrow scope and character. To quote Lachmann:
+
 \begin{quote}
-    every action depends on the state of knowledge of the agent at the point in time of the action, which is not predictable at the point in time of the formulation of the theory \parencite[61]{lachmann-significance}.
+
+every action depends on the state of knowledge of the agent at the point in time of the action, which is not predictable at the point in time of the formulation of the theory encite[61]{lachmann-significance}.
+
 \end{quote}
-Moreover, while it is possible to trace the consequences of action in the sphere of production and wealth accumulation e.g. due to coin debasements or tariffs, it is far more questionable to trace the effects of changing the technology, tastes, or available resources on prices and quantities, as the latter has to be understood as taken in equilibrium \parencite[32--33]{lachmann1986market}.
 
-Lachmann does not present a single unified systematic perspective, nor did he believe in one. Rather he assumes that there are different goals for economic sciences, and while some of them may be unreachable because of some inherent limitations within the subject matter (e.g. prediction), the Austrian market process perspective is only one of the possibilities, adequate for some explanations, but maybe not universal \parencite[41]{lachmann1986market}.
+Moreover, while it is possible to trace the consequences of action in the sphere of production and wealth accumulation e.g. due to coin debasements or tariffs, it is far more questionable to trace the effects of changing the technology, tastes, or available resources on prices and quantities, as the latter has to be understood as taken in equilibrium encite[32--33]{lachmann1986market}.
 
-It is the task of a historian to look at alternative models provided by theoreticians and choose the proper ones according to his understanding of a situation or a process under study \parencite[179]{lachmann-science}. There are no rules for applying models by historians, they can be misapplied in various ways, but the ultimate test is the fruitfulness of research \parencite[175]{lachmann-science}.
+
+
+Lachmann does not present a~single unified systematic perspective, nor did he believe in one. Rather he assumes that there are different goals for economic sciences, and while some of them may be unreachable because of some inherent limitations within the subject matter (e.g. prediction), the Austrian market process perspective is only one of the possibilities, adequate for some explanations, but maybe not universal encite[41]{lachmann1986market}.
+
+
+
+It is the task of a~historian to look at alternative models provided by theoreticians and choose the proper ones according to his understanding of a~situation or a~process under study encite[179]{lachmann-science}. There are no rules for applying models by historians, they can be misapplied in various ways, but the ultimate test is the fruitfulness of research encite[175]{lachmann-science}.
+
 For example, he criticizes Hayek for calling Frank Knight's concept of capital ``mythological'', because:
+
 \begin{quote}
-  In assessing the merits of our two perspectives we have to judge by the facts on which they cast light and by the significance of these facts to us. If we are interested in certain facts which is one of the perspectives are either abstracted from or given low status, we shall of course not adopt it, but this gives us no right to condemn it as an analytical device \parencite[175]{lachmann-salvage}.
+
+In assessing the merits of our two perspectives we have to judge by the facts on which they cast light and by the significance of these facts to us. If we are interested in certain facts which is one of the perspectives are either abstracted from or given low status, we shall of course not adopt it, but this gives us no right to condemn it as an analytical device encite[175]{lachmann-salvage}.
+
 \end{quote}
+
 In particular, in some circumstances he suggests concentrating on particular traits of phenomena and the differences they bring to the table:
+
 \begin{quote}
-    Markets differ in many ways that do not matter to the purpose of understanding the constellation, the entirety, of market forces. These differences become relevant only when they affect the character of human action in markets. But when they do, they must not be abstracted from, for in such cases talk of ``the market'' is as likely to mislead as to enlighten \parencite[271]{lachmann-speculative-markets}.
+
+Markets differ in many ways that do not matter to the purpose of understanding the constellation, the entirety, of market forces. These differences become relevant only when they affect the character of human action in markets. But when they do, they must not be abstracted from, for in such cases talk of ``the market'' is as likely to mislead as to enlighten encite[271]{lachmann-speculative-markets}.
+
 \end{quote}
+
+
 
 Similarly, in the context of the Austrian Business Cycle Theory he wrote:
+
 \begin{quote}
-    Once we admit that people learn from experience, the cycle cannot be reproduced time after time [\ldots]
-    [I]t may be better to give up the doubtful quest for a model of the business cycle and to regard phenomena such as cyclical fluctuations in output and prices simply as phenomena of history [\ldots] with the events of each successive cycle requiring different, though often similar, explanations \parencite[30--31]{lachmann1986market}.
+
+Once we admit that people learn from experience, the cycle cannot be reproduced time after time [\ldots]
+
+[I]t may be better to give up the doubtful quest for a~model of the business cycle and to regard phenomena such as cyclical fluctuations in output and prices simply as phenomena of history [\ldots] with the events of each successive cycle requiring different, though often similar, explanations encite[30--31]{lachmann1986market}.
+
 \end{quote}
+
 Overall, Lachmann seems to be critical of any unified approach:
+
 \begin{quote}
-    logic certainly is immanent in all human action. But this alone does not mean that the logic of success, which depends upon means and ends, is also the logic governing all action. Conceivably another kind of logic, one employing other categories, might be applicable here \parencite[59]{lachmann-significance}.
+
+logic certainly is immanent in all human action. But this alone does not mean that the logic of success, which depends upon means and ends, is also the logic governing all action. Conceivably another kind of logic, one employing other categories, might be applicable here encite[59]{lachmann-significance}.
+
 \end{quote}
 
-Given this, it should not surprise anyone that Lachmann was happy when he noted similarities between the reformulated Hicksian and the Austrian capital and growth theory \parencite[253--254,258,264--265]{lachmann-hicks}. At the same time he did not dispute the validity of the Keynesian one \parencite[106]{lachmann-ha}. Indeed at one point, he stated that in his view Great Depression was an example of a crisis of underconsumption \parencite[111]{lachmann-ha}.
 
-Lachmann gives historians practical advice not to give in to the temptation of reducing the number of causal factors as it often leads to perceiving a historical process under consideration as a response of an individual or a social group to a quasi-external cause.
-Such ``cause'', e.g. Hegelian group-spirit, is substituted for plans of individuals, and it is in his opinion mythology, not history, ``reminiscent of the Olympian interventions in the struggles of the Homeric heroes \parencite[175]{lachmann-science}.
-As an example of failed endeavors, Lachmann points to explanations of the period 1815--1914 solely in terms of the ``process of industrializations'', as they abstract from crucially significant dissimilarities between countries or industries that this frame of reference cannot capture \parencite[176]{lachmann-science}.
 
-It is informative to have a short glance at Lachmann's interpretation of two important debates in the history of economic thought: between Hayek and Keynes on the Great Depression, and between Hayek and Sraffa on business cycles.
-For the first one, Lachmann does not really challenge the validity of their respective theories. He rather resolved the issue by claiming that both sides were talking past each other. Interestingly enough, he noticed that there was a lot of common ground since Keynes and Hayek were both committed to a similar subjectivist methodology, and they put aside their political differences in the course of the debate \parencite[183]{lachmann-keynes}. The true difference arose at the level of interpretation of contemporary facts: Keynes assumed that it was only in the case of financial markets that prices were fixed largely independent of expectations, whereas Hayek pointed out that it is rather the case for ordinary market, but not for financial assets with prices set by banks \parencite[183--184]{lachmann-keynes}.
+Given this, it should not surprise anyone that Lachmann was happy when he noted similarities between the reformulated Hicksian and the Austrian capital and growth theory encite[253--254,258,264--265]{lachmann-hicks}. At the same time he did not dispute the validity of the Keynesian one encite[106]{lachmann-ha}. Indeed at one point, he stated that in his view Great Depression was an example of a~crisis of underconsumption encite[111]{lachmann-ha}.
+
+
+
+Lachmann gives historians practical advice not to give in to the temptation of reducing the number of causal factors as it often leads to perceiving a~historical process under consideration as a~response of an individual or a~social group to a~quasi-external cause.
+
+Such ``cause'', e.g. Hegelian group-spirit, is substituted for plans of individuals, and it is in his opinion mythology, not history, ``reminiscent of the Olympian interventions in the struggles of the Homeric heroes encite[175]{lachmann-science}.
+
+As an example of failed endeavors, Lachmann points to explanations of the period 1815--1914 solely in terms of the ``process of industrializations'', as they abstract from crucially significant dissimilarities between countries or industries that this frame of reference cannot capture encite[176]{lachmann-science}.
+
+
+
+It is informative to have a~short glance at Lachmann's interpretation of two important debates in the history of economic thought: between Hayek and Keynes on the Great Depression, and between Hayek and Sraffa on business cycles.
+
+For the first one, Lachmann does not really challenge the validity of their respective theories. He rather resolved the issue by claiming that both sides were talking past each other. Interestingly enough, he noticed that there was a~lot of common ground since Keynes and Hayek were both committed to a~similar subjectivist methodology, and they put aside their political differences in the course of the debate encite[183]{lachmann-keynes}. The true difference arose at the level of interpretation of contemporary facts: Keynes assumed that it was only in the case of financial markets that prices were fixed largely independent of expectations, whereas Hayek pointed out that it is rather the case for ordinary market, but not for financial assets with prices set by banks encite[183--184]{lachmann-keynes}.
+
 However, for Lachmann such conflicts are hard to avoid, because:
+
 \begin{quote}
-    whenever we confront very large numbers of facts, it is in any case impossible to know all of them and we have to `stylize' what we regard as a representative selection of them\footnote{Compare \textcite[304]{mises-theory}, who was convinced that ``scientists may disagree about theories. They never lastingly disagree about the establishment of what is called pure facts''.} \parencite[190]{lachmann-keynes}.
+
+whenever we confront very large numbers of facts, it is in any case impossible to know all of them and we have to `stylize' what we regard as a~representative selection of them\footnote{Compare \textcite[304]{mises-theory}, who was convinced that ``scientists may disagree about theories. They never lastingly disagree about the establishment of what is called pure facts''.} encite[190]{lachmann-keynes}.
+
 \end{quote}
-Lachmann notes that this is exactly applying the principle of subjectivity to the social sciences (after all, products of human activity themselves) that leads us to dispense with the idea of objective facts in economic history that could be subjected to a universal intersubjective agreement e.g. via testing.
+
+Lachmann notes that this is exactly applying the principle of subjectivity to the social sciences (after all, products of human activity themselves) that leads us to dispense with the idea of objective facts in economic history that could be subjected to a~universal intersubjective agreement e.g. via testing.
+
+
 
 However, when he discusses the attack Sraffa launched on the Hayekian theory of business cycles, he gives him credit on several points, but not for having an alternative sound theory. On the contrary, he accused him of having the wrong theory, based on improper usage of equilibrium, inconsistent with subjectivism.
-Even worse, since Sraffa knew that his (neo-Ricardian) stance was highly disputed, he was deliberately concealing it to discredit Hayek in the eyes of fellow subjectivist Keynesians or formalist general equilibrium theory adherents \parencite[144--145]{lachmann-hayek-sraffa}.
+
+Even worse, since Sraffa knew that his (neo-Ricardian) stance was highly disputed, he was deliberately concealing it to discredit Hayek in the eyes of fellow subjectivist Keynesians or formalist general equilibrium theory adherents encite[144--145]{lachmann-hayek-sraffa}.
+
+
 
 \section{Lachmann \emph{versus} the Austrian School}
 
-For a reader familiar with the works of the major economists of the Austrian School, that is, Mises, Hayek, and Rothbard, the above view on the tasks of economists might sound like a mixed bag.
+
+
+For a~reader familiar with the works of the major economists of the Austrian School, that is, Mises, Hayek, and Rothbard, the above view on the tasks of economists might sound like a~mixed bag.
+
 Clearly, Lachmann with his insistence on subjectivism and acting men is perfectly in line with their own pronouncements, and it was acknowledged at least by Israel Kirzner, another major Austrian economist:
+
 \begin{quote}
-    Lachmann, similarly, instructed us that when we deal with broader questions, with institutions and regularities in economic affairs, we have not completed our task if we have not called attention to the purposes and motives and interests that underlie these phenomena \parencite[46]{kirzner-method}.
+
+Lachmann, similarly, instructed us that when we deal with broader questions, with institutions and regularities in economic affairs, we have not completed our task if we have not called attention to the purposes and motives and interests that underlie these phenomena encite[46]{kirzner-method}.
+
 \end{quote}
-His agenda is in clear agreement with the works of the Austrian School, and Lachmann acknowledged the connection, hailing his predecessors as champions of subjectivism \parencite[28]{lachmann-crisis}.
-Indeed, he seems to be strongly influenced by the seminal works of Hayek on knowledge and its dissemination in society (primarily \emph{Economics and Knowledge}, 1937, and \emph{The Use of Knowledge in Society}, 1945), and he recognizes congeniality of the main claims from the Mises' \emph{opus magnum} \emph{Human Action} to his own research program \parencite[56--57]{lachmann-kaleidic}.
+
+His agenda is in clear agreement with the works of the Austrian School, and Lachmann acknowledged the connection, hailing his predecessors as champions of subjectivism encite[28]{lachmann-crisis}.
+
+Indeed, he seems to be strongly influenced by the seminal works of Hayek on knowledge and its dissemination in society (primarily \emph{Economics and Knowledge}, 1937, and \emph{The Use of Knowledge in Society}, 1945), and he recognizes congeniality of the main claims from the Mises' \emph{opus magnum} \emph{Human Action} to his own research program encite[56--57]{lachmann-kaleidic}.
+
+
 
 Kirzner also agrees with the two main tasks of economics outlined by Lachmann: ``to make the world around us intelligible in terms of human action and the pursuit of plans [\ldots] [and] to trace the unintended consequences of such action (\cite[41]{kirzner-method}; see also \cite[261--262]{lachmann-hicks-neo}), and directly relate them to the writings of Carl Menger\footnote{Interestingly, both Kirzner and \textcite[66--67]{rothbard-praxeology} pointed out the insufficiency of Hayek's position in this respect, preferred to emphasize only the latter task.}.
 
-In addition, Lachmann is also eager to defend methodological dualism of natural and social sciences \parencite[167--168]{lachmann-science}, independence of the theoretical social sciences, in particular economics \parencite[59]{lachmann-significance} -- both points heavily emphasized by modern Austrian economists.
-He also agrees with his predecessors that the validity of economic theories is warranted solely by logic, and not by experience (\cite[58]{lachmann-significance}; see also \cite[41]{mises-ha}, \cite[21, 31--32]{rothbard-praxeology}).
-His insistence that ``actions certainly are events in space and time and, as such, are observable. But observation alone cannot reveal meaning'' \parencite[58]{lachmann-significance} is highly reminiscent of the respective pronouncements e.g. by \textcite[26]{mises-ha}, \citeyear[245]{mises-theory}, or \textcite[63--64]{hoppe} when they rebuke behaviorism and positivism.
 
-Paradoxically, Lachmann is closer to Mises than to his teacher Hayek, as the latter used intertemporal general equilibrium as his basic tool of macroeconomic analysis\footnote{Note that even Hayek was conscious that ``to make full use of the equilibrium concept we must abandon the pretence that it refers to something real'' \parencite[23]{hayek-pure}.} (\cite[190]{lachmann-hayek}; see also \cite{lachmann-hayek-sraffa}).
+
+In addition, Lachmann is also eager to defend methodological dualism of natural and social sciences encite[167--168]{lachmann-science}, independence of the theoretical social sciences, in particular economics encite[59]{lachmann-significance} -- both points heavily emphasized by modern Austrian economists.
+
+He also agrees with his predecessors that the validity of economic theories is warranted solely by logic, and not by experience (\cite[58]{lachmann-significance}; see also \cite[41]{mises-ha}, \cite[21, 31--32]{rothbard-praxeology}).
+
+His insistence that ``actions certainly are events in space and time and, as such, are observable. But observation alone cannot reveal meaning'' encite[58]{lachmann-significance} is highly reminiscent of the respective pronouncements e.g. by \textcite[26]{mises-ha}, \citeyear[245]{mises-theory}, or \textcite[63--64]{hoppe} when they rebuke behaviorism and positivism.
+
+
+
+Paradoxically, Lachmann is closer to Mises than to his teacher Hayek, as the latter used intertemporal general equilibrium as his basic tool of macroeconomic analysis\footnote{Note that even Hayek was conscious that ``to make full use of the equilibrium concept we must abandon the pretence that it refers to something real'' encite[23]{hayek-pure}.} (\cite[190]{lachmann-hayek}; see also \cite{lachmann-hayek-sraffa}).
+
 Mises and Lachmann were known to be uncompromising in rejecting any kind of macroeconomic reasoning in terms of equilibrium terms as meaningless for the real economy.
-Lachmann happily endorsed Misesian restriction of general equilibrium constructs to hypothetical ones and replaced them with the concept of the market process (\cite[183]{lachmann-mises-process}; see also \cite[230--231]{mises-planning})\footnote{See \textcite{salerno-equilibrium} for different kinds of equilibrium used by Austrian economists. Check also \textcite{cowen-ere} for a critique of inconsistent use of evenly rotating economy auxiliary construct by Mises and Rothbard.}.
+
+Lachmann happily endorsed Misesian restriction of general equilibrium constructs to hypothetical ones and replaced them with the concept of the market process (\cite[183]{lachmann-mises-process}; see also \cite[230--231]{mises-planning})\footnote{See \textcite{salerno-equilibrium} for different kinds of equilibrium used by Austrian economists. Check also \textcite{cowen-ere} for a~critique of inconsistent use of evenly rotating economy auxiliary construct by Mises and Rothbard.}.
+
+
 
 There are also many similarities between Lachmann and other Austrians in the economics proper, e.g. in the theories of business cycles and entrepreneurship.
-Lachmann acknowledges Mises as the champion of the market process approach (\cite[182--183]{lachmann-mises-process}; \citeyear[60]{lachmann-kaleidic}), and he praises Misesian dynamic theory of entrepreneurship \parencite[102]{lachmann-ha}. Similarly, he points to Hayek as the one who raised fatal charges against the neoclassical notion of a homogeneous capital already in the 1930s\footnote{As \textcite[lxii-lxiii]{hulsmann} notes, this point was observed even earlier by Mises in his 1933 essay \emph{Inconvertible Capital}, and only then developed in detail by Hayek.}, but unfortunately, their insights were completely ignored by the mainstream, though preserved in the Austrian School e.g. in the works of Kirzner \parencite[195--198]{lachmann-hayek}.
+
+Lachmann acknowledges Mises as the champion of the market process approach (\cite[182--183]{lachmann-mises-process}; \citeyear[60]{lachmann-kaleidic}), and he praises Misesian dynamic theory of entrepreneurship encite[102]{lachmann-ha}. Similarly, he points to Hayek as the one who raised fatal charges against the neoclassical notion of a~homogeneous capital already in the 1930s\footnote{As \textcite[lxii-lxiii]{hulsmann} notes, this point was observed even earlier by Mises in his 1933 essay \emph{Inconvertible Capital}, and only then developed in detail by Hayek.}, but unfortunately, their insights were completely ignored by the mainstream, though preserved in the Austrian School e.g. in the works of Kirzner encite[195--198]{lachmann-hayek}.
+
 And while he notes that there was also later, independent, but far more famous criticism espoused by so-called Cambridge UK Keynesians, at the same time he points out that they rely on the Ricardian and formalist framework instead of Keynes' subjectivism -- which makes them wrong in other respects (\cite[21, 51--52]{lachmann1973macro}; see also \cite[33]{lachmann-crisis}).
+
+
 
 \subsection{Points of divergence: subjectivism and institutions}
 
+
+
+
+
 On the other hand, there are in Lachmann some pronouncements that distanced him from his fellow Austrian economists. They were mostly concerned with the two main topics of his methodological thought, subjectivism, and institutions.
 
-First, Lachmann contended that the Austrians were not radical enough in their subjectivism.
-To prove the case, he distinguished three stages of the development of subjectivism. The first one, appearing in the 1870s and presented most consistently in the works of Carl Menger, was concerned with the consumer as a source of value in economics, and stressed the subjectivity of wants.
-However, as Lachmann rightly pointed out, Menger's subjectivism was limited in that he believed in distinctions between real and imaginary goods, and he postulated the existence of the objective hierarchy of wants \parencite[57]{lachmann-menger}.
 
-The next step was done by Mises, who first recognized these limitations in Menger's work \parencite[192]{mises-epe}, and improved on him by introducing subjectivism of means and ends. In doing so he argued that uncertainty and change in the world imply appraisal of means. Still, in Lachmann's view, Mises did not pay enough attention to the role of changing knowledge and expectations (\cite[57]{lachmann-expectations}; \citeyear[37]{lachmann-extension}; see also \cite[65--66]{koppl}). Later in his life, Lachmann expressed his concern that Mises assumed the aims of individuals as fixed, thus neglecting the importance of mind choosing and changing goals \parencite[6]{lachmann-shackle-place}.
+
+First, Lachmann contended that the Austrians were not radical enough in their subjectivism.
+
+To prove the case, he distinguished three stages of the development of subjectivism. The first one, appearing in the 1870s and presented most consistently in the works of Carl Menger, was concerned with the consumer as a~source of value in economics, and stressed the subjectivity of wants.
+
+However, as Lachmann rightly pointed out, Menger's subjectivism was limited in that he believed in distinctions between real and imaginary goods, and he postulated the existence of the objective hierarchy of wants encite[57]{lachmann-menger}.
+
+
+
+The next step was done by Mises, who first recognized these limitations in Menger's work encite[192]{mises-epe}, and improved on him by introducing subjectivism of means and ends. In doing so he argued that uncertainty and change in the world imply appraisal of means. Still, in Lachmann's view, Mises did not pay enough attention to the role of changing knowledge and expectations (\cite[57]{lachmann-expectations}; \citeyear[37]{lachmann-extension}; see also \cite[65--66]{koppl}). Later in his life, Lachmann expressed his concern that Mises assumed the aims of individuals as fixed, thus neglecting the importance of mind choosing and changing goals encite[6]{lachmann-shackle-place}.
+
+
 
 Hayek, though still, for Lachmann, remained an incomplete subjectivist, is credited with going beyond Mises at least on two occasions.
-Already in 1933 in his Copenhagen lecture, he explicitly mentioned expectations in the context of his trade cycle theory (\cite{hayek-1933}; see also \cite[259]{lachmann-hicks-neo}). Moreover, in his famous 1948 article \emph{Economics and Knowledge}, he claimed that the logic of choice is far from sufficient, and for economics to be empirical it has to study patterns of knowledge acquisition and dissemination \parencite[33]{hayek-knowledge}.
-Still, as it was mentioned above, in Lachmann's view even Hayek did not pursue this route consistently, because he considered the general equilibrium model as his starting point, and for a while, he was captured by an idea that there is a ``strong tendency towards general equilibrium as a real phenomenon of the market economy'' \parencite[60]{lachmann-kaleidic}.
+
+Already in 1933 in his Copenhagen lecture, he explicitly mentioned expectations in the context of his trade cycle theory (\cite{hayek-1933}; see also \cite[259]{lachmann-hicks-neo}). Moreover, in his famous 1948 article \emph{Economics and Knowledge}, he claimed that the logic of choice is far from sufficient, and for economics to be empirical it has to study patterns of knowledge acquisition and dissemination encite[33]{hayek-knowledge}.
+
+Still, as it was mentioned above, in Lachmann's view even Hayek did not pursue this route consistently, because he considered the general equilibrium model as his starting point, and for a~while, he was captured by an idea that there is a~``strong tendency towards general equilibrium as a~real phenomenon of the market economy'' encite[60]{lachmann-kaleidic}.
+
+
 
 For Lachmann, the final stage comes with an acknowledgment of the subjectivity of expectations. He praised Keynes, Knight, and the Swedish disciples of Wicksell (mainly Lindahl and Myrdal) for introducing expectations in their economic theories in the 1930s (\cite[141]{lachmann-notes}; \citeyear[157--158]{lachmann-individualism}; \citeyear[5]{lachmann-shackle-place}).
-He viewed that this move was partly responsible for the Keynesian victory over the Austrians in the 1930s \parencite[see][10]{mittenmaier}.
+
+He viewed that this move was partly responsible for the Keynesian victory over the Austrians in the 1930s encite[see][10]{mittenmaier}.
+
 However, he notes that the usage of expectations in \emph{General Theory} was inconsistent, and later Keynesians disposed of them when they formalized the dominant neoclassical synthesis paradigm, so the radical subjectivist parts of Keynes' work remained unnoticed (\cite[141--142]{lachmann-notes}; see also \cite[221]{lachmann-vicissitudes}).
-On this point, he also criticized Mises and Hayek for not noticing expectations as a fellow subjectivist topic that should be embraced and analyzed using a market process approach they were developing \parencite[5]{lachmann-shackle-place}.
+
+On this point, he also criticized Mises and Hayek for not noticing expectations as a~fellow subjectivist topic that should be embraced and analyzed using a~market process approach they were developing encite[5]{lachmann-shackle-place}.
+
 But it was only when the dominant neoclassical paradigm started to be challenged in the 1960s that the issue was slowly reintroduced in the economic discussion.
 
-Indeed, it was a long-time friend of Lachmann and a fellow student at the LSE, George Shackle, who was credited by Lachmann for carrying forward the ideas of close links between time and knowledge, subjectivism of expectations, and finally the notion of the kaleidic world.
-Following Shackle, Lachmann also endorsed the subjectivist reading of \emph{General Theory}, according to which there is an internal tension in the book between the formalist, equilibrium way of presenting a large part of his arguments, and his subjectivist leanings visible e.g. in his treatment of expectations, leading him to regard Keynes as even more subjectivist than Austrians \parencite[281]{lachmann-hermeneutic}.
+
+
+Indeed, it was a~long-time friend of Lachmann and a~fellow student at the LSE, George Shackle, who was credited by Lachmann for carrying forward the ideas of close links between time and knowledge, subjectivism of expectations, and finally the notion of the kaleidic world.
+
+Following Shackle, Lachmann also endorsed the subjectivist reading of \emph{General Theory}, according to which there is an internal tension in the book between the formalist, equilibrium way of presenting a~large part of his arguments, and his subjectivist leanings visible e.g. in his treatment of expectations, leading him to regard Keynes as even more subjectivist than Austrians encite[281]{lachmann-hermeneutic}.
+
 Clearly, with this perspective at hand, both Shackle and Lachmann were extremely critical of what was preserved from Keynes in the post-war neoclassical synthesis, i.e. the ``hydraulic approach'', in particular including the multiplier-accelerator mechanism (\cite[188]{lachmann-keynes}; \citeyear[149]{lachmann-hayek-sraffa}).
 
+
+
 No wonder Lachmann was against any notion of ``lagged responses'' or ``adaptive expectations'', which reduced actions to reactions to antecedent events and denied creativity on the part of the economic agents.
-With changing knowledge and without a deterministic dependency between knowledge and expectations he contends after Shackle that the world of human action is \emph{kaleidic}, that is, changing rapidly like in a kaleidoscope, forming new, ever-changing patterns as time passes \parencite[28--29]{lachmann1986market}.
+
+With changing knowledge and without a~deterministic dependency between knowledge and expectations he contends after Shackle that the world of human action is \emph{kaleidic}, that is, changing rapidly like in a~kaleidoscope, forming new, ever-changing patterns as time passes encite[28--29]{lachmann1986market}.
+
+
 
 The second point of divergence between Lachmann and the Austrians is the embrace of the Weberian method of understanding (\emph{Verstehen}) as ``the `natural' method of rendering an intelligible account of the manifestations of the human mind'' (\cite[17--18]{lachmann-weber}; see also \cite[47]{lachmann-significance}), which
+
 \begin{quote}
-  is nothing less than the traditional method of scholarship that scholars have used throughout the ages whenever they were concerned with the interpretation of texts. Whenever one is in doubt about the meaning of a passage one tries to establish what the author ``meant by it''.
-  [\ldots] It is evidently possible to extend this classical method of scholarship to human acts other than writings \parencite[10]{lachmann-weber}.
+
+is nothing less than the traditional method of scholarship that scholars have used throughout the ages whenever they were concerned with the interpretation of texts. Whenever one is in doubt about the meaning of a~passage one tries to establish what the author ``meant by it''.
+
+[\ldots] It is evidently possible to extend this classical method of scholarship to human acts other than writings encite[10]{lachmann-weber}.
+
 \end{quote}
+
+
 
 Applications of \emph{Verstehen} result, following Weber, in the formation of the ideal types.
-They are not distillations from historical experience, but rather figments of our imagination, and there is no universal algorithm for their construction, as they depend on the events under consideration.
-They abstract from a mass of unnecessary detail but accentuate the features we wish to study (\cite[26--27]{lachmann-weber}; see also \cite[90]{weber}). They ``serve us as criteria of classification of real events [but] we must not confuse them with reality'' \parencite[254]{lachmann-legislation}. 
 
-Contrary to what Mises wrote in distinguishing real and ideal types e.g. in the context of entrepreneurship \parencite[59--64, 252--256]{mises-ha}, and restricting the usage of ideal types to history, Lachmann considers praxeology as providing historians with ideal-typical conceptual classification schemes \parencite[34--35]{lachmann1986market}.
+They are not distillations from historical experience, but rather figments of our imagination, and there is no universal algorithm for their construction, as they depend on the events under consideration.
+
+They abstract from a~mass of unnecessary detail but accentuate the features we wish to study (\cite[26--27]{lachmann-weber}; see also \cite[90]{weber}). They ``serve us as criteria of classification of real events [but] we must not confuse them with reality'' encite[254]{lachmann-legislation}.
+
+
+
+Contrary to what Mises wrote in distinguishing real and ideal types e.g. in the context of entrepreneurship encite[59--64, 252--256]{mises-ha}, and restricting the usage of ideal types to history, Lachmann considers praxeology as providing historians with ideal-typical conceptual classification schemes encite[34--35]{lachmann1986market}.
+
 In fact, his perspective on ideal and real types is almost the opposite of what we can see in Mises: real types here serve as proxies for masses of particular historical facts, obtained by inductive generalization. Either facts themselves or real types are compared with ``theoretical'' ideal types to gain insights into particular causal processes and to obtain explanations expressed in terms of the plans of individuals.
 
+
+
 Lachmann takes the considerations on ideal types further by arguing that what makes the general equilibrium framework problematic is not exactly its assumptions such as setting all producers as price takers, as this can be seen as an accentuation of the situation of the real-world consumers, where they cannot alter the prices.
-The real problem lies in mistaking the ideal type for a ``normal'' or ``higher'' reality that real events may deviate from \parencite[37]{lachmann1986market}. Moreover, there is a question of what use could be such a model since its inbuilt stability can only accommodate a very narrow group of adjustment processes.
 
-Lachmann believes that although Weber himself was reluctant to search for wider generalizations, it is possible to develop a general dynamic theory of institutions based on Weber's work.
-Using subjectivist insights that every plan has to include expectations of plans of others, we saw Lachmann introducing institutions as points of orientation for acting people. Then, he believes there can be developed a rudimentary general theory that can capture issues e.g. of elasticity of institutions and cohesion of orders \parencite[8]{lachmann-weber}.
+The real problem lies in mistaking the ideal type for a~``normal'' or ``higher'' reality that real events may deviate from encite[37]{lachmann1986market}. Moreover, there is a~question of what use could be such a~model since its inbuilt stability can only accommodate a~very narrow group of adjustment processes.
 
-\subsection{Was Lachmann a nihilist?}
 
-The comments on the subjectivism, ideal types, and the relative neglect of the \emph{a priori} theory present in Lachmann's works were likely the cause of Rothbard's ire.
-Although Rothbard was happily endorsing \emph{Capital and its structure} by Lachmann as a work in the Misesian paradigm, he stated that by the mid-1970s there was a significant break in Lachmann's thought related to his ``conversion to Shackleinism'' (\cite[53]{rothbard-present}; see also \cite{barbieri2021lachmann}) leading to his `` crusade to bring the blessings of randomness and abandonment of theory to Austrian economics'' \parencite[56--57]{rothbard-hermeneutic}. To quote Rothbard at length:
+
+Lachmann believes that although Weber himself was reluctant to search for wider generalizations, it is possible to develop a~general dynamic theory of institutions based on Weber's work.
+
+Using subjectivist insights that every plan has to include expectations of plans of others, we saw Lachmann introducing institutions as points of orientation for acting people. Then, he believes there can be developed a~rudimentary general theory that can capture issues e.g. of elasticity of institutions and cohesion of orders encite[8]{lachmann-weber}.
+
+
+
+\subsection{Was Lachmann a~nihilist?}
+
+
+
+
+
+The comments on the subjectivism, ideal types, and the relative neglect of the \emph{a~priori} theory present in Lachmann's works were likely the cause of Rothbard's ire.
+
+Although Rothbard was happily endorsing \emph{Capital and its structure} by Lachmann as a~work in the Misesian paradigm, he stated that by the mid-1970s there was a~significant break in Lachmann's thought related to his ``conversion to Shackleinism'' (\cite[53]{rothbard-present}; see also \cite{barbieri2021lachmann}) leading to his `` crusade to bring the blessings of randomness and abandonment of theory to Austrian economics'' encite[56--57]{rothbard-hermeneutic}. To quote Rothbard at length:
+
 \begin{quote}
-    Lachmannian Man knows no economic law, no law of cause and effect, qualitative or quantitative. In fact, he can have no \emph{Verstehen} into patterns that are likely to occur in the future. At every moment of succeeding time, Lachmannian Man steps into a trackless void [\ldots] Money? Prices? They can have no relation to the future, qualitative or quantitative, which means they are not causally related at all \parencite[52]{rothbard-present}\footnote{Curiously, twenty years earlier \textcite[50]{rothbard-praxeology-method} quoted Lachmann approvingly in that ``the Austrians were endeavoring to construct a `verstehende social science', the same ideal that Max Weber was later to uphold''.}.
+
+Lachmannian Man knows no economic law, no law of cause and effect, qualitative or quantitative. In fact, he can have no \emph{Verstehen} into patterns that are likely to occur in the future. At every moment of succeeding time, Lachmannian Man steps into a~trackless void [\ldots] Money? Prices? They can have no relation to the future, qualitative or quantitative, which means they are not causally related at all encite[52]{rothbard-present}\footnote{Curiously, twenty years earlier \textcite[50]{rothbard-praxeology-method} quoted Lachmann approvingly in that ``the Austrians were endeavoring to construct a~`verstehende social science', the same ideal that Max Weber was later to uphold''.}.
+
 \end{quote}
+
 In short, Rothbard adds that by assuming the radical uncertainty of the future Lachmann confined himself to the studies of the past.
-Then, we can pose a simple dilemma: either we have causal theories in social science, and thus the future is somewhat (even though imperfectly) knowable, or we do not have ones -- but then there appears a problem with how we can interpret the past. And Lachmann by discarding the former case has to embrace the untenable second one \parencite[53--54]{rothbard-present}.
 
-However, note that even late in his life \textcite[140]{lachmann1986market} did not consider himself a nihilist. Rather he called nihilists those looking for mechanical causation in social sciences, despite all the problems that subjectivists raise against this line of research.
-He still believed that with all their limitations economists can render useful services to society in a kaleidic world \parencite[7]{lachmann-shackle-place} and stressed that 
+Then, we can pose a~simple dilemma: either we have causal theories in social science, and thus the future is somewhat (even though imperfectly) knowable, or we do not have ones -- but then there appears a~problem with how we can interpret the past. And Lachmann by discarding the former case has to embrace the untenable second one encite[53--54]{rothbard-present}.
+
+
+
+However, note that even late in his life \textcite[140]{lachmann1986market} did not consider himself a~nihilist. Rather he called nihilists those looking for mechanical causation in social sciences, despite all the problems that subjectivists raise against this line of research.
+
+He still believed that with all their limitations economists can render useful services to society in a~kaleidic world encite[7]{lachmann-shackle-place} and stressed that
+
 \begin{quote}
-    if we accept that we have to seek the causes of human action in ends pursued and the constraints operating in such pursuit, causal analysis in terms of the orientation of the various actors at various points of time during a course of action appears quite possible \parencite[200]{lachmann-hayek}.
+
+if we accept that we have to seek the causes of human action in ends pursued and the constraints operating in such pursuit, causal analysis in terms of the orientation of the various actors at various points of time during a~course of action appears quite possible encite[200]{lachmann-hayek}.
+
 \end{quote}
+
+
 
 On several points, Rothbard's criticism sounds too harsh and not justified enough.
-For example, he asserted that ``the past is, in principle, absolutely knowable; the future is absolutely unknowable'' \parencite[52]{rothbard-present}, but he forgot to add that Lachmann qualified it by saying that the future is not unimaginable (\cite[194]{lachmann-hayek}; \citeyear[215]{lachmann-vicissitudes}; \citeyear[265]{lachmann-speculative-markets}). 
-And it was already Mises who in his \emph{Theory and History} pronounced that ``one of the fundamental conditions of man's existence and action is the fact that he does not know what will happen in the future'' \parencite[180]{mises-theory} and ``what a man can say about the future is always merely speculative anticipation'' \parencite[203]{mises-theory}.
-This is in complete agreement with Lachmann's own words that ``a world of uncertainty is not a world of chaos'' and our condition compels us to make forecasts about the success of our actions, but we just cannot have any scientific ones \parencite[139]{lachmann1986market}.
-In this view, he rather restricts the uncertainty problem to a lack of exact predictions, while still allowing for informed guesswork in ordinary action based on \emph{Verstehen} \parencite{lewin-life}.
+
+For example, he asserted that ``the past is, in principle, absolutely knowable; the future is absolutely unknowable'' encite[52]{rothbard-present}, but he forgot to add that Lachmann qualified it by saying that the future is not unimaginable (\cite[194]{lachmann-hayek}; \citeyear[215]{lachmann-vicissitudes}; \citeyear[265]{lachmann-speculative-markets}).
+
+And it was already Mises who in his \emph{Theory and History} pronounced that ``one of the fundamental conditions of man's existence and action is the fact that he does not know what will happen in the future'' encite[180]{mises-theory} and ``what a~man can say about the future is always merely speculative anticipation'' encite[203]{mises-theory}.
+
+This is in complete agreement with Lachmann's own words that ``a world of uncertainty is not a~world of chaos'' and our condition compels us to make forecasts about the success of our actions, but we just cannot have any scientific ones encite[139]{lachmann1986market}.
+
+In this view, he rather restricts the uncertainty problem to a~lack of exact predictions, while still allowing for informed guesswork in ordinary action based on \emph{Verstehen} encite{lewin-life}.
+
 Curiously, even in the case of the subjectivism of expectations, one can find in the writings of Mises thoughts congenial to Lachmann:
+
 \begin{quote}
-    There is neither constancy nor continuity in the valuations and in the formation of exchange ratios between various commodities. Every new datum brings about a reshuffling of the whole price structure. Understanding, by trying to grasp what is going on in the minds of the men concerned, can approach the problem of forecasting future conditions. We may call its methods unsatisfactory and the positivists may arrogantly scorn it. But such arbitrary judgments must not and cannot obscure the fact that understanding is the only appropriate method of dealing with the uncertainty of future conditions \parencite[118]{mises-ha}.
+
+There is neither constancy nor continuity in the valuations and in the formation of exchange ratios between various commodities. Every new datum brings about a~reshuffling of the whole price structure. Understanding, by trying to grasp what is going on in the minds of the men concerned, can approach the problem of forecasting future conditions. We may call its methods unsatisfactory and the positivists may arrogantly scorn it. But such arbitrary judgments must not and cannot obscure the fact that understanding is the only appropriate method of dealing with the uncertainty of future conditions encite[118]{mises-ha}.
+
 \end{quote}
 
-Similarly, when Rothbard declares that ``by tossing out equilibrium concepts altogether, and in concentrating only on market processes, Lachmannians and other non-Misesian Austrians fail to realize that they thereby give up any chance of understanding those processes themselves'' \parencite[57]{rothbard-present}, it is not directed against Lachmann, as he was declaring that ``equilibrium analysis is a necessary first step on our way to causal explanation, a means towards an end'' \parencite[198]{lachmann-hayek}.
+
+
+Similarly, when Rothbard declares that ``by tossing out equilibrium concepts altogether, and in concentrating only on market processes, Lachmannians and other non-Misesian Austrians fail to realize that they thereby give up any chance of understanding those processes themselves'' encite[57]{rothbard-present}, it is not directed against Lachmann, as he was declaring that ``equilibrium analysis is a~necessary first step on our way to causal explanation, a~means towards an end'' encite[198]{lachmann-hayek}.
+
+
 
 And when Rothbard wrote that
-\begin{quote}
-    In value theory, the non-Misesians, especially the Lachmannians, neglect or deny the objective fact that physical objects are being produced, exchanged, and evaluated, albeit that they are subjectively evaluated by acting individuals \parencite[50]{rothbard-present},
-\end{quote}
-he clearly forgot that it was his teacher Mises who pointed out that ``Economics is not about goods and services; it is about human choice and action [\ldots] The sole task of economics is analysis of the actions of men, is the analysis of processes'' \parencite[354]{mises-ha}.
-That said, Lachmann would never deny that plans in the sphere of production determine the uses of capital goods, i.e. stocks of material resources \parencite[for example in][10--11]{lachmann1956capital}.
 
-Moreover, it is too far-fetched to identify Lachmann's views with Shackle. For example, in his early review of Shackle, he rightly notes that the kaleidic claim, if it was taken literally, would imply that ``there could be no testing the success of plans, no plan revision, and no comparison between \emph{ex ante} and \emph{ex post}'' \parencite[84]{lachmann-shackle-time}. Therefore, he postulates a clear delineation, allowing for intertemporal comparisons concerning knowledge of relations between means and ends while admitting discontinuities of human ends.
-Certainly, Rothbard pointed to the change that occurred somewhere until the mid-1970s, but it can be easily interpreted as a change of emphasis.
-For example, the late Lachmann was still known to convince Shackle later in his life to admit the role of institutions as points of orientation for agents in the uncertain world \parencite[in][31]{dekker-lachmann}.
-And while discussing kaleidic markets he still throws an off-hand remark that ''Marshallian markets for individual goods may for a time find their respective equilibria'' \parencite[61]{lachmann-kaleidic}.
-
-Overall, general denigration of \emph{a priori} theory by Lachmann is not limited to his later years, and bears resemblance to the comments Hayek formulated against the pure logic of choice, cited favorably by \textcite[57]{lachmann-significance}. And by Hayek's own admission, this was directed also against the Misesian approach to economic theory:
 \begin{quote}
-    [M]y 1937 article on the economics of knowledge [\ldots] was an attempt to persuade Mises himself that when he asserted that the market theory was a priori, he was wrong; that what was a priori was only the logic of particular action, but the moment that you passed from this to the interaction of many people, you entered into the empirical field (\cite[72]{hayek-on-hayek}; see also \cite[Lachmann quoted in][35]{selgin}).
+
+In value theory, the non-Misesians, especially the Lachmannians, neglect or deny the objective fact that physical objects are being produced, exchanged, and evaluated, albeit that they are subjectively evaluated by acting individuals encite[50]{rothbard-present},
+
 \end{quote}
+
+he clearly forgot that it was his teacher Mises who pointed out that ``Economics is not about goods and services; it is about human choice and action [\ldots] The sole task of economics is analysis of the actions of men, is the analysis of processes'' encite[354]{mises-ha}.
+
+That said, Lachmann would never deny that plans in the sphere of production determine the uses of capital goods, i.e. stocks of material resources encite[for example in][10--11]{lachmann1956capital}.
+
+
+
+Moreover, it is too far-fetched to identify Lachmann's views with Shackle. For example, in his early review of Shackle, he rightly notes that the kaleidic claim, if it was taken literally, would imply that ``there could be no testing the success of plans, no plan revision, and no comparison between \emph{ex ante} and \emph{ex post}'' encite[84]{lachmann-shackle-time}. Therefore, he postulates a~clear delineation, allowing for intertemporal comparisons concerning knowledge of relations between means and ends while admitting discontinuities of human ends.
+
+Certainly, Rothbard pointed to the change that occurred somewhere until the mid-1970s, but it can be easily interpreted as a~change of emphasis.
+
+For example, the late Lachmann was still known to convince Shackle later in his life to admit the role of institutions as points of orientation for agents in the uncertain world encite[in][31]{dekker-lachmann}.
+
+And while discussing kaleidic markets he still throws an off-hand remark that ''Marshallian markets for individual goods may for a~time find their respective equilibria'' encite[61]{lachmann-kaleidic}.
+
+
+
+Overall, general denigration of \emph{a~priori} theory by Lachmann is not limited to his later years, and bears resemblance to the comments Hayek formulated against the pure logic of choice, cited favorably by \textcite[57]{lachmann-significance}. And by Hayek's own admission, this was directed also against the Misesian approach to economic theory:
+
+\begin{quote}
+
+[M]y 1937 article on the economics of knowledge [\ldots] was an attempt to persuade Mises himself that when he asserted that the market theory was a~priori, he was wrong; that what was a~priori was only the logic of particular action, but the moment that you passed from this to the interaction of many people, you entered into the empirical field (\cite[72]{hayek-on-hayek}; see also \cite[Lachmann quoted in][35]{selgin}).
+
+\end{quote}
+
 Thus, the real point of contention is that Hayek and Lachmann relied in the latter context on the considerations about knowledge, where there can be no definite laws.
-This combines well on the one hand with his criticism of behaviorism and purely observational language in economics, but on the other hand with his negative remarks about any talking of stable dispositions as inoperative as they change over time, sometimes very rapidly \parencite[11]{lachmann-weber}. He includes preferences, plans, knowledge, and expectations as the central notions of analysis, but only as terms denoting momentary dispositions.
 
-Mises and Rothbard distinguished formal (universal) and material (contingent) aspects of actions by restricting theory only to an inquiry into the formal side (see e.g. \cite[31--32]{mises-ha}; \cite[83]{rothbard-mes}). Therefore, they can be easily seen as more interested in isolating certain singular causal processes in the social world under \emph{ceteris paribus} clause or using counterfactual reasoning. This is exactly why they developed the Austrian theory of growth based on the analysis of singular changes in time preference or the Austrian theory of a business cycle based on tracing a single injection of new money substitutes into a credit market.
-This, contra Hayek and Lachmann, could be a case for \emph{a priori} laws in the sphere of catallactics -- however to argue for the full-blown theories of growth and business cycle we also need to trace the subsequent changes, and they clearly would proceed differently depending on the particular pattern of knowledge dissemination, which indeed complicated the picture.
-And contra Menger who claimed that the laws of economics are as exact as in natural sciences, Lachmann was the first to correctly object that such determinism would contradict freedom of the human will \parencite[59]{lachmann-menger}.
+This combines well on the one hand with his criticism of behaviorism and purely observational language in economics, but on the other hand with his negative remarks about any talking of stable dispositions as inoperative as they change over time, sometimes very rapidly encite[11]{lachmann-weber}. He includes preferences, plans, knowledge, and expectations as the central notions of analysis, but only as terms denoting momentary dispositions.
+
+
+
+Mises and Rothbard distinguished formal (universal) and material (contingent) aspects of actions by restricting theory only to an inquiry into the formal side (see e.g. \cite[31--32]{mises-ha}; \cite[83]{rothbard-mes}). Therefore, they can be easily seen as more interested in isolating certain singular causal processes in the social world under \emph{ceteris paribus} clause or using counterfactual reasoning. This is exactly why they developed the Austrian theory of growth based on the analysis of singular changes in time preference or the Austrian theory of a~business cycle based on tracing a~single injection of new money substitutes into a~credit market.
+
+This, contra Hayek and Lachmann, could be a~case for \emph{a~priori} laws in the sphere of catallactics -- however to argue for the full-blown theories of growth and business cycle we also need to trace the subsequent changes, and they clearly would proceed differently depending on the particular pattern of knowledge dissemination, which indeed complicated the picture.
+
+And contra Menger who claimed that the laws of economics are as exact as in natural sciences, Lachmann was the first to correctly object that such determinism would contradict freedom of the human will encite[59]{lachmann-menger}.
+
 In short, Lachmann would not even need to dispute if the claim ``that if the money supply increases and the people's demand for money remains the same, prices will rise'' (cited in \cite[52]{rothbard-present}) is an absolutely true, apodictic praxeological law, but he could just complain that one of the antecedents (constant demand for money) is virtually never true and thus hardly relevant to the real world\footnote{See also similar doubts about the quantitatively determinable law of demand in the absence of error and ignorance in \textcite[58]{lachmann-menger}.}.
 
-Additionally, a Weberian economic sociologist could be much more interested in the totality of social causation, including secondary chains contingent on particular characteristics of an epoch, a market, etc. For Mises it would not count as praxeology, but rather thymology, a purely historical discipline\footnote{As one of the commentators noted, ``from Mises’s perspective, Lachmann is interested in the methods of history, not those of economics \parencite[37]{parsons}.} \parencite[272--274]{mises-theory}.
-And indeed later in his life, Lachmann called for the ``economic sociology'', general theory of institutions along Weberian lines \parencite[277--278,282]{lachmann-hermeneutic}.
 
-Seemingly, often Lachmann had none of these subtleties in mind e.g. when he claimed that in \emph{Human Action} ``it is the work of Max Weber that is being carried on'' \parencite[95]{lachmann-ha}, and when he downplayed the Misesian distinction between \emph{Verstehen} and \emph{Begreifen} as the methods of historical and theoretical inquiry, respectively \parencite[49]{lachmann-significance}.
-Of course, Mises acknowledged his intellectual debt to Weber \parencite[79]{mises-epe}, but unlike Lachmann it was not done without serious qualifications.
-And many Austrians, contra Lachmann, would rather frame it in a way that leaves the necessity apodictic, yet open to counter-operation of some other contingent causes or limited to the cases when entities in question (such as humans, society, money) exist \parencite[57]{rothbard-present}.
+
+Additionally, a~Weberian economic sociologist could be much more interested in the totality of social causation, including secondary chains contingent on particular characteristics of an epoch, a~market, etc. For Mises it would not count as praxeology, but rather thymology, a~purely historical discipline\footnote{As one of the commentators noted, ``from Mises's perspective, Lachmann is interested in the methods of history, not those of economics encite[37]{parsons}.} encite[272--274]{mises-theory}.
+
+And indeed later in his life, Lachmann called for the ``economic sociology'', general theory of institutions along Weberian lines encite[277--278,282]{lachmann-hermeneutic}.
+
+
+
+Seemingly, often Lachmann had none of these subtleties in mind e.g. when he claimed that in \emph{Human Action} ``it is the work of Max Weber that is being carried on'' encite[95]{lachmann-ha}, and when he downplayed the Misesian distinction between \emph{Verstehen} and \emph{Begreifen} as the methods of historical and theoretical inquiry, respectively encite[49]{lachmann-significance}.
+
+Of course, Mises acknowledged his intellectual debt to Weber encite[79]{mises-epe}, but unlike Lachmann it was not done without serious qualifications.
+
+And many Austrians, contra Lachmann, would rather frame it in a~way that leaves the necessity apodictic, yet open to counter-operation of some other contingent causes or limited to the cases when entities in question (such as humans, society, money) exist encite[57]{rothbard-present}.
+
+
 
 However, there is also one common point between Lachmann, Shackle, and Weber, separating them from the Misesian paradigm.
-It is the case that all agreed on the importance of more particular studies, and constructing theory in a bottom-up fashion instead of searching for large, comprehensive theoretical systems.
-Interestingly, it is clearly in line with the famous phrase of Joan Robinson, borrowed by another idiosyncratic Austrian Joseph Schumpeter, that ``economic theory is a box of tools'' \parencite[15]{schumpeter-history}, that neatly described the approach that is dominating in the mainstream since the post-war period \parencite{morgan,rodrik}.
 
-In scarce remarks on a general concept of science in his earlier writings, Lachmann defines science as ``systematic generalizations about observable
-phenomena'' \parencite[166]{lachmann-science} and he argues for the similarity between scientists forming working hypotheses and businessmen forming their expectations, picking the right concepts for the problem at hand\footnote{Note the striking similarity to the quote ``It is not enough for the statesman, the politician, the general, or the entrepreneur to know all the factors that can possibly contribute to the determination of a future event. In order to anticipate correctly they must also anticipate correctly the quantity as it were of each factor's contribution and the instant at which its contribution will become effective. And later the historians will have to face the same difficulty in analyzing and understanding the case in retrospect'' in \textcite[314--315]{mises-theory}.} \cite[90, 93]{lachmann-shackle-time}. If theories of social sciences differ from commonsense generalizations only by a degree of systematicity and prudence involved in their formation, then there is no reason to state such hard distinctions.
-In fact, Lachmann seems to be leaning toward this view when he mentions that the proper understanding of the past taking into account nuances of subjective interpretation helps to recognize e.g. which current problems are the most urgent \parencite[240]{lachmann-hermeneutic}.
+It is the case that all agreed on the importance of more particular studies, and constructing theory in a~bottom-up fashion instead of searching for large, comprehensive theoretical systems.
 
-This leads us to a problem that was identified by Rothbard when he wrote that ``they could be called ``historians'' except they do very little actual historical work'' \parencite[53]{rothbard-present}.
-One can justifiably ask: is there any lasting value for example to Lachmann's comments about differences between fixprice and flexprice markets, or a division of processes into intra-market, inter-market, and macroeconomic ones? \parencite[6--14]{lachmann1986market}
+Interestingly, it is clearly in line with the famous phrase of Joan Robinson, borrowed by another idiosyncratic Austrian Joseph Schumpeter, that ``economic theory is a~box of tools'' encite[15]{schumpeter-history}, that neatly described the approach that is dominating in the mainstream since the post-war period encite{morgan,rodrik}.
+
+
+
+In scarce remarks on a~general concept of science in his earlier writings, Lachmann defines science as ``systematic generalizations about observable
+
+phenomena'' encite[166]{lachmann-science} and he argues for the similarity between scientists forming working hypotheses and businessmen forming their expectations, picking the right concepts for the problem at hand\footnote{Note the striking similarity to the quote ``It is not enough for the statesman, the politician, the general, or the entrepreneur to know all the factors that can possibly contribute to the determination of a~future event. In order to anticipate correctly they must also anticipate correctly the quantity as it were of each factor's contribution and the instant at which its contribution will become effective. And later the historians will have to face the same difficulty in analyzing and understanding the case in retrospect'' in \textcite[314--315]{mises-theory}.} \cite[90, 93]{lachmann-shackle-time}. If theories of social sciences differ from commonsense generalizations only by a~degree of systematicity and prudence involved in their formation, then there is no reason to state such hard distinctions.
+
+In fact, Lachmann seems to be leaning toward this view when he mentions that the proper understanding of the past taking into account nuances of subjective interpretation helps to recognize e.g. which current problems are the most urgent encite[240]{lachmann-hermeneutic}.
+
+
+
+This leads us to a~problem that was identified by Rothbard when he wrote that ``they could be called ``historians'' except they do very little actual historical work'' encite[53]{rothbard-present}.
+
+One can justifiably ask: is there any lasting value for example to Lachmann's comments about differences between fixprice and flexprice markets, or a~division of processes into intra-market, inter-market, and macroeconomic ones? encite[6--14]{lachmann1986market}
+
 Awkward silence on this issue by younger generations of Austrian economists inspired by Lachmann can serve as evidence that ultimately this did not bring anything important to the table.
 
+
+
 \section{The method applied: financial markets}
+
 \label{sec:finance}
 
-In our view a defense of the Lachmannian subjectivist-institutionalist project would be incomplete if it were concluded on the philosophical plane.
+
+
+In our view a~defense of the Lachmannian subjectivist-institutionalist project would be incomplete if it were concluded on the philosophical plane.
+
 And probably the best way to prove the fruitfulness of methodological pronouncements is to put them into practice.
+
 Fortunately, with Lachmann we can find examples that show his adherence to the professed method in his economic works -- so let us concentrate on one, often overlooked example of his research interests, that is, the topic of financial markets.
 
-As Lachmann notes, ``in the real world there are markets and markets'', and abstracting from their differences can easily lead one astray \parencite[263--264]{lachmann-speculative-markets}.    
+
+
+As Lachmann notes, ``in the real world there are markets and markets'', and abstracting from their differences can easily lead one astray encite[263--264]{lachmann-speculative-markets}.
+
 And it is clear that if there is one institution that distinguishes capitalism from other economic systems, it is the capital market.
+
 Lachmann agrees with this claim completely, when he states that
+
 \begin{quote}
-    [m]arkets of course may exist in a centrally administered economy [\ldots] but markets for capital assets, and thus for financial assets, cannot exist in a socialist economy. [\ldots]
-    asset markets, and in particular a Stock Exchange embedded in a network of financial asset markets, form the core of a market economy: they are in fact its central markets\footnote{Interestingly, Mises too once said to Rothbard that ``a stock market is crucial to the existence of capitalism and private property'', and it serves as the criterion to distinguish capitalism from socialism \parencite[426]{rothbard-stock}.} \parencite[255]{lachmann-monetary}.
+
+[m]arkets of course may exist in a~centrally administered economy [\ldots] but markets for capital assets, and thus for financial assets, cannot exist in a~socialist economy. [\ldots]
+
+asset markets, and in particular a~Stock Exchange embedded in a~network of financial asset markets, form the core of a~market economy: they are in fact its central markets\footnote{Interestingly, Mises too once said to Rothbard that ``a stock market is crucial to the existence of capitalism and private property'', and it serves as the criterion to distinguish capitalism from socialism encite[426]{rothbard-stock}.} encite[255]{lachmann-monetary}.
+
 \end{quote}
 
-Lachmann distinguished two classes of agents in intertemporal markets: hedgers and speculators (\cite[10]{lachmann1986market}; \citeyear[264--265]{lachmann-speculative-markets}). The first typically want to ``cover a position they for other reasons have to take up, for example, to protect stock they hold against depreciation through fall in price, or to ascertain their ability to buy future input into production processes under their control'', whereas the second just wants to earn profits from intertemporal price changes.
-Note that speculators are not exactly arbitrageurs, because they do not secure their position by buying and selling the same good at the same time \parencite[10]{lachmann1986market}.
+
+
+Lachmann distinguished two classes of agents in intertemporal markets: hedgers and speculators (\cite[10]{lachmann1986market}; \citeyear[264--265]{lachmann-speculative-markets}). The first typically want to ``cover a~position they for other reasons have to take up, for example, to protect stock they hold against depreciation through fall in price, or to ascertain their ability to buy future input into production processes under their control'', whereas the second just wants to earn profits from intertemporal price changes.
+
+Note that speculators are not exactly arbitrageurs, because they do not secure their position by buying and selling the same good at the same time encite[10]{lachmann1986market}.
+
+
 
 He, however, often stresses another property of financial markets, that is, their speculative nature:
-\begin{quote}
-    without divergence of expectations there can be no market at all, we can say that this divergence provides the substrate upon which the market price rests \parencite[161]{lachmann-model}.
-\end{quote}
-Note that this claim can sound problematic to Austrian economists in the tradition of Mises and Rothbard: although it is true that the real-world financial markets exhibit a high divergence of expectations, its existence is not necessary for the transactions to occur. For example, such economists could claim that financial markets are ultimately just capital markets, where people trade not only because of existing uncertainty but also because of differences in their time preferences \parencite[376--378]{rothbard-mes}. Both functions are important: first serves as a selection process of people with better entrepreneurial skills, who are rewarded with monetary profit; second allows for adjustment of investment to the interest rate as a social expression of individual time preferences \parencite{klein-entrepreneurship}.
 
-Lachmann often underlines that since financial markets are speculative, they have a peculiar quality that agents can far more easily switch sides of transactions compared to the more traditional commodity markets, which in turn leads to the peculiar volatility of asset markets (\cite[42]{lachmann1986market}; \citeyear[267]{lachmann-speculative-markets}).
-In comparison, ``ordinary'' markets have stable underlying patterns of supply and demand, ``which provides all participants a common point of orientation'' for expectation convergence \parencite[264]{lachmann-speculative-markets}.
-Furthermore, in his 1976 article, Lachmann claims that
 \begin{quote}
-  [i]n an asset market in which the whole stock always is potentially on sale and in which everybody can easily choose or change sides, we find an element of volatility that is absent from the product market. Such asset markets are inherently ``restless'', and equilibrium prices established in them reflect nothing, but the daily balance of expectations. In the cotton market, for example, it is likely that expectations about the probable price in July 1976 will tend to converge as this date draws nearer. But this cannot happen in the Stock Exchange, since what is being traded there are titles to (in principle) permanent income streams, which have no ``date'' that could ``move nearer''. All we get is a succession of market-day equilibria determined by a balance of expectations tilting from one day to the next as the flow of the news turns bulls into bears and vice versa. There is here no question of a gradual approach towards long-run equilibrium (\cite[60]{lachmann-kaleidic}, see also \cite[202]{lachmann-hayek}; \citeyear[161--162]{lachmann-individualism}; \citeyear[264]{lachmann-speculative-markets}).
+
+without divergence of expectations there can be no market at all, we can say that this divergence provides the substrate upon which the market price rests encite[161]{lachmann-model}.
+
 \end{quote}
+
+Note that this claim can sound problematic to Austrian economists in the tradition of Mises and Rothbard: although it is true that the real-world financial markets exhibit a~high divergence of expectations, its existence is not necessary for the transactions to occur. For example, such economists could claim that financial markets are ultimately just capital markets, where people trade not only because of existing uncertainty but also because of differences in their time preferences encite[376--378]{rothbard-mes}. Both functions are important: first serves as a~selection process of people with better entrepreneurial skills, who are rewarded with monetary profit; second allows for adjustment of investment to the interest rate as a~social expression of individual time preferences encite{klein-entrepreneurship}.
+
+
+
+Lachmann often underlines that since financial markets are speculative, they have a~peculiar quality that agents can far more easily switch sides of transactions compared to the more traditional commodity markets, which in turn leads to the peculiar volatility of asset markets (\cite[42]{lachmann1986market}; \citeyear[267]{lachmann-speculative-markets}).
+
+In comparison, ``ordinary'' markets have stable underlying patterns of supply and demand, ``which provides all participants a~common point of orientation'' for expectation convergence encite[264]{lachmann-speculative-markets}.
+
+Furthermore, in his 1976 article, Lachmann claims that
+
+\begin{quote}
+
+[i]n an asset market in which the whole stock always is potentially on sale and in which everybody can easily choose or change sides, we find an element of volatility that is absent from the product market. Such asset markets are inherently ``restless'', and equilibrium prices established in them reflect nothing, but the daily balance of expectations. In the cotton market, for example, it is likely that expectations about the probable price in July 1976 will tend to converge as this date draws nearer. But this cannot happen in the Stock Exchange, since what is being traded there are titles to (in principle) permanent income streams, which have no ``date'' that could ``move nearer''. All we get is a~succession of market-day equilibria determined by a~balance of expectations tilting from one day to the next as the flow of the news turns bulls into bears and vice versa. There is here no question of a~gradual approach towards long-run equilibrium (\cite[60]{lachmann-kaleidic}, see also \cite[202]{lachmann-hayek}; \citeyear[161--162]{lachmann-individualism}; \citeyear[264]{lachmann-speculative-markets}).
+
+\end{quote}
+
+
 
 However, under this description stock market is equivalent to some kind of organized betting on some purely random events.
-However, one may ask a very simple question: what could be a rationale for such a market to systematically support coordination?
+
+However, one may ask a~very simple question: what could be a~rationale for such a~market to systematically support coordination?
+
 Clearly, betting markets help people with divergent expectations concerning such events to meet and engage in transactions, but despite realizing the double coincidence of wants e.g. stemming from the pure joy of betting it is hard to find any reason to call such markets ``coordination institutions''.
-Unfortunately, Lachmann does not provide us with any indication what could be the difference between a stock exchange and a casino.
+
+Unfortunately, Lachmann does not provide us with any indication what could be the difference between a~stock exchange and a~casino.
+
 He is embracing the idea of the volatility of financial markets, as marked by the following quote:
+
 \begin{quote}
-  It is a typical feature of volatile speculative markets that strong price movements will attract outsiders to them so that either bulls or bears are continuously reinforced and a given price trend is maintained. In such circumstances, market forces tending towards a balance of bullish and bearish expectations may remain weak \parencite[259]{lachmann-monetary}.
+
+It is a~typical feature of volatile speculative markets that strong price movements will attract outsiders to them so that either bulls or bears are continuously reinforced and a~given price trend is maintained. In such circumstances, market forces tending towards a~balance of bullish and bearish expectations may remain weak encite[259]{lachmann-monetary}.
+
 \end{quote}
-All this does raise a question of why any follower of this argument should not agree with the famous comparison by Keynes:
+
+All this does raise a~question of why any follower of this argument should not agree with the famous comparison by Keynes:
+
 \begin{quote}
-    It is usually agreed that casinos should, in the public interest, be inaccessible and expensive. And perhaps the same is true of stock exchanges \parencite[159]{keynes-gt}.
+
+It is usually agreed that casinos should, in the public interest, be inaccessible and expensive. And perhaps the same is true of stock exchanges encite[159]{keynes-gt}.
+
 \end{quote}
-If the profit and loss mechanism is not in place, then in volatile financial markets it is more plausible that the expectations often function as self-fulfilling prophecies that destabilize production structure e.g. as described in Financial Instability Hypothesis by another Post-Keynesian economist, Hyman Minsky \parencite{minsky}.
+
+If the profit and loss mechanism is not in place, then in volatile financial markets it is more plausible that the expectations often function as self-fulfilling prophecies that destabilize production structure e.g. as described in Financial Instability Hypothesis by another Post-Keynesian economist, Hyman Minsky encite{minsky}.
+
+
 
 In his earlier works, he clearly stated coordination forces on the market stem from knowledge
+
 transmission through the price system, aligning the expectations of people and the structure of production (\cite[103]{lachmann-ha}; \citeyear[62]{lachmann1956capital}).
+
 For example, he follows Mises that the market is
+
 \begin{quote}
-    [a] process of redistribution of wealth [\ldots] not prompted by a concatenation of hazards. Those who participate in it are not playing a game of chance, but a game of skill. This process, like all real dynamic processes, reflects the transmission of knowledge from mind to mind. It is possible only because some people have knowledge that others have not yet acquired because knowledge of change and its implications spread gradually and unevenly throughout society \parencite[313]{lachmann-market-distribution}.
+
+[a] process of redistribution of wealth [\ldots] not prompted by a~concatenation of hazards. Those who participate in it are not playing a~game of chance, but a~game of skill. This process, like all real dynamic processes, reflects the transmission of knowledge from mind to mind. It is possible only because some people have knowledge that others have not yet acquired because knowledge of change and its implications spread gradually and unevenly throughout society encite[313]{lachmann-market-distribution}.
+
 \end{quote}
+
 Similarly, for assets markets
+
 \begin{quote}
-    the sources of income streams are revalued every day in accordance with the prevailing balance of expectations, giving capital gains to some, and inflicting capital losses upon others. What reason is there to believe that interference with this market process is any less detrimental than interference with the production and exchange of goods and services? Those who believe that such a reason does exist (and most of our contemporary ``welfare economists'' do!) must assume that asset holders, like Ricardian landlords, somehow stand outside all market processes and ``get rich in their sleep'' \parencite[163]{lachmann-model}.
+
+the sources of income streams are revalued every day in accordance with the prevailing balance of expectations, giving capital gains to some, and inflicting capital losses upon others. What reason is there to believe that interference with this market process is any less detrimental than interference with the production and exchange of goods and services? Those who believe that such a~reason does exist (and most of our contemporary ``welfare economists'' do!) must assume that asset holders, like Ricardian landlords, somehow stand outside all market processes and ``get rich in their sleep'' encite[163]{lachmann-model}.
+
 \end{quote}
-And for Lachmann this ``continued redistribution of wealth in a market economy'' \parencite[202]{lachmann-hayek} has an important function:
+
+And for Lachmann this ``continued redistribution of wealth in a~market economy'' encite[202]{lachmann-hayek} has an important function:
+
 \begin{quote}
-    Stock Exchange ``monitors'' the performance of managers. [\ldots] The shareholder watches these prices and draws his conclusions. When he disapproves of some action by his managers he `votes with his feet' -- he sells. [\ldots] Owners and managers, so far from being `separated' from each other, are linked together indirectly through the market \parencite[249]{lachmann-legislation}. 
+
+Stock Exchange ``monitors'' the performance of managers. [\ldots] The shareholder watches these prices and draws his conclusions. When he disapproves of some action by his managers he `votes with his feet' -- he sells. [\ldots] Owners and managers, so far from being `separated' from each other, are linked together indirectly through the market encite[249]{lachmann-legislation}.
+
 \end{quote}
-This way he sounds like Mises, who declared ``the more profits a man earns, the greater his wealth consequently becomes, the more influential does he become in the conduct of business affairs'' \parencite[23]{mises-profit}.
+
+This way he sounds like Mises, who declared ``the more profits a~man earns, the greater his wealth consequently becomes, the more influential does he become in the conduct of business affairs'' encite[23]{mises-profit}.
+
+
 
 So, did Lachmann in the later years change his mind on the price system and its function?
+
 It is clear that as late as 1967 he contended that
+
 \begin{quote}
-    while it is true that in an uncertain world present prices cannot offer entrepreneurs more than a basis of orientation for their plans, it is also true that the disappearance of this basis must constitute a serious loss \parencite[300]{lachmann-causes}.
+
+while it is true that in an uncertain world present prices cannot offer entrepreneurs more than a~basis of orientation for their plans, it is also true that the disappearance of this basis must constitute a~serious loss encite[300]{lachmann-causes}.
+
 \end{quote}
+
 And although in later works Lachmann did not return to this issue, it is not clear if he repudiated them in any form or just shifted his attention to other aspects.
-As long as he remained in agreement with Mises on this point, this provided the missing puzzle, which does not allow to equate markets with games of chance \parencite[221]{manish}.
+
+As long as he remained in agreement with Mises on this point, this provided the missing puzzle, which does not allow to equate markets with games of chance encite[221]{manish}.
+
+
 
 However, there is another puzzling statement about the expectations:
+
 \begin{quote}
-    [e]ach one of us catches a different glimpse. The wider the range of divergence the greater the possibility that somebody's expectation will turn out to be right \parencite[59]{lachmann-kaleidic}.
+
+[e]ach one of us catches a~different glimpse. The wider the range of divergence the greater the possibility that somebody's expectation will turn out to be right encite[59]{lachmann-kaleidic}.
+
 \end{quote}
-This claim is obviously true, but on a closer look, it has no explanatory power. The success of a single plan among the masses of failures would not give any hint of the apparent functioning of capital markets, as admitted even by many critics of capitalism.
+
+This claim is obviously true, but on a~closer look, it has no explanatory power. The success of a~single plan among the masses of failures would not give any hint of the apparent functioning of capital markets, as admitted even by many critics of capitalism.
+
+
 
 Although Lachmann did not say it directly, he probably would appreciate an intrinsic advantage of asset markets stemming from their network character. Capital goods can change hands more easily, which is especially important for durable ones that were created with some plan in mind, which turned to be inconsistent. And some other people may bid on them, to use them in their plans.
 
-Overall, it can be said that Lachmann was only emphasizing the problems that were neglected by some Austrians, especially the ones sympathetic towards some kind of general equilibrium perspective\footnote{See \textcite{salerno-place,salerno-wieser} for a parallel view of two traditions in Austrian economics, one causal-realist, more in line with the market process approach, and another relying on a verbal general equilibrium analysis.}, while repeating after Mises the essential functions of capital markets continued well into the 1970s and 1980s.
+
+
+Overall, it can be said that Lachmann was only emphasizing the problems that were neglected by some Austrians, especially the ones sympathetic towards some kind of general equilibrium perspective\footnote{See \textcite{salerno-place,salerno-wieser} for a~parallel view of two traditions in Austrian economics, one causal-realist, more in line with the market process approach, and another relying on a~verbal general equilibrium analysis.}, while repeating after Mises the essential functions of capital markets continued well into the 1970s and 1980s.
+
+
 
 \section{Conclusion}
 
-As with other Austrian economists, assessing Lachmann's deep philosophical influences has to include the fact that he was not interested in philosophy for its own sake, but rather to develop a useful alternative to formal neoclassical models of production with their mathematically convenient assumptions. In the beginning, he was trying to make the point to his fellow economists about the importance of commonsensical characteristics of capital goods, such as their heterogeneity or limited specificity, and their dependence on the use of knowledge and expectations in society.
+
+
+As with other Austrian economists, assessing Lachmann's deep philosophical influences has to include the fact that he was not interested in philosophy for its own sake, but rather to develop a~useful alternative to formal neoclassical models of production with their mathematically convenient assumptions. In the beginning, he was trying to make the point to his fellow economists about the importance of commonsensical characteristics of capital goods, such as their heterogeneity or limited specificity, and their dependence on the use of knowledge and expectations in society.
+
+
 
 Over the years, he refined his methodological views along the lines of subjectivist institutionalism, taking inspiration from Max Weber (institutions) and G.L.S. Shackle (subjectivism), and ultimately arrived at the stance that appeared out of line with the orthodox approach represented e.g. by Mises, Hayek, and Rothbard.
-This prompted Rothbard to criticize Lachmann as ``opposed to even the possibility of economic theory'', ``no longer economists at all'', or even ``professional anti-economists and meta-historians, expending their energies denouncing economics and urging other economists to act as historians'' \parencite[53]{rothbard-present}.
-Unfortunately, this criticism largely stemmed from a misunderstanding of Lachmann as a traitor of the Austrian banner\footnote{The is somewhat understandable, because some of his particular insights appear only in passing, for example when he is commenting on works of other economists, such as Mises or Shackle. Instead, in more programmatic publications he does not repeat some crucial insights or reservations that nuance his line of reasoning.}, rather than a heavily Austrian-influenced institutionalist with a decisive subjectivist bent with a modest, eclectic, and ecumenical approach.
 
-At the same time, one is under a clear impression that Lachmann is deliberately trying to emphasize similarities between them while downplaying the fundamental differences e.g. between Austrians and subjectivist Keynesians (e.g. in \cite[184]{lachmann-keynes}).
-He is always eager to praise subjectivist and institutionalist endeavors of such non-Austrian thinkers as John Hicks (\cite[218]{lachmann-vicissitudes}; \citeyear[184]{lachmann-keynes}), Luigi Pasinetti \parencite[164]{lachmann-salvage}, or Paul Davidson \parencite[166]{lachmann-salvage}, and calls for brokers of ideas, who could assimilate ideas stemming from different paradigms \parencite[282]{lachmann-hermeneutic}.
-Even when Lachmann credits Mises, Hayek, and their disciples as the ones ``concerned with meaningful action'' and emphasizing institutional aspects of the economy, he does so in one breath with a mention of ordoliberals and disciples of Weber \parencite[251--253]{lachmann-legislation}.
+This prompted Rothbard to criticize Lachmann as ``opposed to even the possibility of economic theory'', ``no longer economists at all'', or even ``professional anti-economists and meta-historians, expending their energies denouncing economics and urging other economists to act as historians'' encite[53]{rothbard-present}.
+
+Unfortunately, this criticism largely stemmed from a~misunderstanding of Lachmann as a~traitor of the Austrian banner\footnote{The is somewhat understandable, because some of his particular insights appear only in passing, for example when he is commenting on works of other economists, such as Mises or Shackle. Instead, in more programmatic publications he does not repeat some crucial insights or reservations that nuance his line of reasoning.}, rather than a~heavily Austrian-influenced institutionalist with a~decisive subjectivist bent with a~modest, eclectic, and ecumenical approach.
+
+
+
+At the same time, one is under a~clear impression that Lachmann is deliberately trying to emphasize similarities between them while downplaying the fundamental differences e.g. between Austrians and subjectivist Keynesians (e.g. in \cite[184]{lachmann-keynes}).
+
+He is always eager to praise subjectivist and institutionalist endeavors of such non-Austrian thinkers as John Hicks (\cite[218]{lachmann-vicissitudes}; \citeyear[184]{lachmann-keynes}), Luigi Pasinetti encite[164]{lachmann-salvage}, or Paul Davidson encite[166]{lachmann-salvage}, and calls for brokers of ideas, who could assimilate ideas stemming from different paradigms encite[282]{lachmann-hermeneutic}.
+
+Even when Lachmann credits Mises, Hayek, and their disciples as the ones ``concerned with meaningful action'' and emphasizing institutional aspects of the economy, he does so in one breath with a~mention of ordoliberals and disciples of Weber encite[251--253]{lachmann-legislation}.
+
+
 
 Unfortunately, this approach obscures some theoretical problems, for example, the completely different price and entrepreneurship theories, which lie at the heart of understanding the market process and its main institutions such as financial markets, probably the most important institutions in developed capitalist economies.
+
 However, this does not mean that the particular analysis or insights could not be transferred between schools or paradigms.
 
-Although Lachmann is rightly viewed as guilty by Rothbard for accepting at least \emph{prima facie} on equal footing different theories as possible explanations\footnote{Interestingly, Rothbard and Lachmann agree on one point: both are skeptical of theories emphasizing biological evolution, inspired by Hayek and popular for some time in Austrian circles (\cite[81]{rothbard-present}; \cite[Lachmann quoted in][26]{dekker-lachmann}).}, one should not be too quick in dismissing the whole Lachmannian enterprise as a completely useless lesson for Austrians.
-Of course, in such lines of research there is always the risk of wasting time developing distinctions with no lasting relevance. At the same time, no matter how powerful we judge the praxological theory to be, there is always a huge room for purely historical research and it cannot be reduced to a simple application of ready-made theorems. 
+
+
+Although Lachmann is rightly viewed as guilty by Rothbard for accepting at least \emph{prima facie} on equal footing different theories as possible explanations\footnote{Interestingly, Rothbard and Lachmann agree on one point: both are skeptical of theories emphasizing biological evolution, inspired by Hayek and popular for some time in Austrian circles (\cite[81]{rothbard-present}; \cite[Lachmann quoted in][26]{dekker-lachmann}).}, one should not be too quick in dismissing the whole Lachmannian enterprise as a~completely useless lesson for Austrians.
+
+Of course, in such lines of research there is always the risk of wasting time developing distinctions with no lasting relevance. At the same time, no matter how powerful we judge the praxological theory to be, there is always a~huge room for purely historical research and it cannot be reduced to a~simple application of ready-made theorems.
+
+
 
 First, as we have seen above, the program pursued by Lachmann was far from being anti-economics, but in practice allowed for some non-trivial insights into particular properties of financial markets. Second, many of his particular results could be directly assimilated by any Austrian economist stemming from the Misesian paradigm.
-In doing so, one does not have to reject praxeology or extreme apriorism \parencite{rothbard-defense}, but one can fully embrace this line of research as thymological.
 
-Austrian economists should remind themselves that they do not have only a particular approach to studying human action but also developed a system of theories according to this methodology.
-When one is confronted with a subjectivist approach from another strand of thought it may be not the case that these are just different models based on different stylized facts, capturing different aspects of price phenomena.
-It may be also the case that our theory in question is indeed universal and immune to such external subjective objections, though by rethinking it we can understand better its strength or refine it. For example, it would be very instructive to check the core Austrian theories (e.g. price or money theory) and point out where other Austrian economists made unwarranted steps and went astray in their analyses along the similar lines as Lachmann, who tried to raise some issues concerning expectations and learning in his comments on the Austrian theory of the business cycle \parencite[123--124]{lachmann-expectations}\footnote{See e.g. excellent work by \textcite{machaj-postkeynesian}, when an Austrian economist confronts Post-Keynesian arguments for mark-up pricing and shows that indeed rightly understood Austrian price theory including B\"ohm-Bawerk's law of costs is compatible with these arguments, and thus immune to a valid criticism directed towards the neoclassical price theory.}.
+In doing so, one does not have to reject praxeology or extreme apriorism encite{rothbard-defense}, but one can fully embrace this line of research as thymological.
 
-Finally, Lachmann's remarks may be helpful as a guide for some Austrian economists more interested in developing theories of particular markets or providing some case studies.
+
+
+Austrian economists should remind themselves that they do not have only a~particular approach to studying human action but also developed a~system of theories according to this methodology.
+
+When one is confronted with a~subjectivist approach from another strand of thought it may be not the case that these are just different models based on different stylized facts, capturing different aspects of price phenomena.
+
+It may be also the case that our theory in question is indeed universal and immune to such external subjective objections, though by rethinking it we can understand better its strength or refine it. For example, it would be very instructive to check the core Austrian theories (e.g. price or money theory) and point out where other Austrian economists made unwarranted steps and went astray in their analyses along the similar lines as Lachmann, who tried to raise some issues concerning expectations and learning in his comments on the Austrian theory of the business cycle encite[123--124]{lachmann-expectations}\footnote{See e.g. excellent work by \textcite{machaj-postkeynesian}, when an Austrian economist confronts Post-Keynesian arguments for mark-up pricing and shows that indeed rightly understood Austrian price theory including B\"ohm-Bawerk's law of costs is compatible with these arguments, and thus immune to a~valid criticism directed towards the neoclassical price theory.}.
+
+
+
+Finally, Lachmann's remarks may be helpful as a~guide for some Austrian economists more interested in developing theories of particular markets or providing some case studies.
+
 However, in the area of history the proof of the pudding is in eating -- and as Lachmann himself noted, any progress in this area has to be judged \emph{ex post} by the value of particular insights, not by merely being faithful to the right pronouncements.
-After all, in economics, it is not the plausibility of Austrian methodology that is the major argument for endorsing it -- but rather the fact that this method can be indeed used to develop a large body of useful theories and relevant explanations\footnote{Interestingly, one of the students of Lachmann assessed that his methodological ideas like kaleidic world would not stand the test of time, unlike some of his contributions to the economics proper \parencite[388]{boehm2000professor}.}.
+
+After all, in economics, it is not the plausibility of Austrian methodology that is the major argument for endorsing it -- but rather the fact that this method can be indeed used to develop a~large body of useful theories and relevant explanations\footnote{Interestingly, one of the students of Lachmann assessed that his methodological ideas like kaleidic world would not stand the test of time, unlike some of his contributions to the economics proper encite[388]{boehm2000professor}.}.
+
+
 
 \printbibliography
 
+
+
 \end{document}
+
