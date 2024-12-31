@@ -297,22 +297,22 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 
 
 \newcommand{\pasekpl}{%
-	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\begin{small}%
-				\zfntitle\: (\zfntitleeng)%
-		\par\vspace{.1mm}%
-		nr \numerarabski\ (\rok), %
-		ss.~\pageref*{\tocnr}\textendash\pageref*{e\tocnr} \enspace $\bullet$ \enspace\end{small}%
-	\begin{footnotesize}CC-BY-NC-ND 4.0\end{footnotesize}\end{subsubsectit}%
-		\enspace\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{_images/CC-BY-NC-ND}}}%
+%	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\begin{small}%
+%				\zfntitle\: (\zfntitleeng)%
+%		\par\vspace{.1mm}%
+%		nr \numerarabski\ (\rok), %
+%		ss.~\pageref*{\tocnr}\textendash\pageref*{e\tocnr} \enspace $\bullet$ \enspace\end{small}%
+%	\begin{footnotesize}CC-BY-NC-ND 4.0\end{footnotesize}\end{subsubsectit}%
+%		\enspace\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{_images/CC-BY-NC-ND}}}%
 }
 \newcommand{\pasekeng}{%
-	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\begin{small}%
-				\zfntitleeng\: (\zfntitle)%
-		\par\vspace{.1mm}%
-		No \numerarabski\ (\rok), %
-		pp.~\pageref*{\tocnr}\textendash\pageref*{e\tocnr} \enspace $\bullet$ \enspace\end{small}%
-		\begin{footnotesize}CC-BY-NC-ND 4.0\end{footnotesize}\end{subsubsectit}%
-		\enspace\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{_images/CC-BY-NC-ND}}}%
+%	\placetextbox{153mm}{-3mm}{\begin{subsubsectit}\begin{small}%
+%				\zfntitleeng\: (\zfntitle)%
+%		\par\vspace{.1mm}%
+%		No \numerarabski\ (\rok), %
+%		pp.~\pageref*{\tocnr}\textendash\pageref*{e\tocnr} \enspace $\bullet$ \enspace\end{small}%
+%		\begin{footnotesize}CC-BY-NC-ND 4.0\end{footnotesize}\end{subsubsectit}%
+%		\enspace\raisebox{-1.75pt}{\includegraphics[height=9.5pt]{_images/CC-BY-NC-ND}}}%
 }
 
 
@@ -417,7 +417,8 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 		\vspace{5mm}%
 		\markboth{\pagname\protect{#1}}{\pagtit\protect{#3}}%
 		}%
-	{%
+	{%	
+		\newpage%
 		\section*{Bibliography}%
 		\printbibliography[heading=none]\nopagebreak[4]%
 		\label{e\tocnr}%
@@ -456,7 +457,9 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 		\markboth{\pagname\protect{#1}}{\pagtit\protect{#3}}%
 		}%
 	{%
-		\section*{Bibliography}\nopagebreak[4]%
+		\newpage%
+		\section*{Bibliography}%
+		\nopagebreak[4]%
 		\printbibliography[heading=none]%
 		\label{e\tocnr}%
 	\end{refsection}%
@@ -568,7 +571,8 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 		\markboth{\pagname\protect{#1}}{\pagtit\protect{#3}}%
 }%
 {%
-%\section*{Bibliography}%
+		\newpage%
+		\section*{Bibliography}%
 		\printbibliography[heading=none]\nopagebreak[4]%
 		\label{e\tocnr}%
 	\end{refsection}%
@@ -700,6 +704,44 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 	\end{refsection}%
 }
 
+\newenvironment{editorialeng2auth}[5]%
+{	\setcounter{footnote}{0}%
+	\setcounter{equation}{0}%
+	\setcounter{section}{0}%
+	\setcounter{subsection}{0}%
+	\setcounter{equation}{0}%
+	\setcounter{table}{0}%
+	\setcounter{figure}{0}%
+	\cleardoublepage%
+	\widowpenalties 3 10000 10000 0%
+	\thispagestyle{plain}\addtocounter{tocnr}{1}\newcommand\tocnr{x\arabic{tocnr}}% empty plain
+	\phantomsection\label{\tocnr}%
+	\addtocontents{toc}{\noindent{\tocname{#1}}\\}%
+	\addtocontents{toc}{{\toctititem#4}\dotfill{\subsubsectit\pageref{\tocnr}}}%
+	\addtocontents{toc}{\vskip.8\baselineskip}
+	\begin{refsection}%
+		\pasekeng%
+		\begin{raggedleft}%
+			\selectlanguage{english} %
+			{\flushright\chaptitle\color{black!70}{#2\par}}%
+%			\vspace{3mm}%
+%			{\flushright\chaptitleeng\color{black!50}{#5}}\par%
+%			\vspace{5mm}%
+			{{#5}\par}%
+		\end{raggedleft}%
+		\vspace{5mm}%
+		\selectlanguage{english}%
+		\markboth{\pagname\protect{#1}}{\pagtit\protect{#3}}%
+}%
+{%
+		\newpage%
+		\section*{Bibliography}%
+		\printbibliography[heading=none]\nopagebreak[4]%
+		\label{e\tocnr}%
+	\end{refsection}%
+\label{e\tocnr}%
+}
+
 
 \newenvironment{newrevplenv2auth}[6]%
 {	\setcounter{footnote}{0}%
@@ -766,6 +808,7 @@ twoside,top=25mm,bottom=20mm,left=23mm,right=23mm,headheight=14pt}
 		\markboth{\pagname\protect{#1}}{\pagtit\protect{#3}}%
 		}%
 	{%
+		\newpage%
 		\section*{Bibliography}%
 		\printbibliography[heading=none]\nopagebreak[4]%
 		\label{e\tocnr}%
@@ -1407,12 +1450,13 @@ backend=biber]{biblatex}
 
 
 
+
 %\input{default.tex}
 
 
-%\sekcjatoconly{Editorial}{Od redakcji}
-\sekcja{Editorial}{Od redakcji}
-\input{EDI_Heller/Heller.tex}
+\sekcjatoconly{Editorial}{Od redakcji}
+%\sekcja{Editorial}{Od redakcji}
+\input{EDI_Block_Wysocki/editorial.tex}
 
 
 \sekcja{Articles}{Artykuły}
@@ -1422,22 +1466,19 @@ backend=biber]{biblatex}
 %\renewcommand{\theequation}{\arabic{equation}}
 
 
-\input{ART_Heathcote/Heathcote_pu.tex}
-
-
-\input{ART_Polak/Polak.tex}
-\input{ART_Krzanowski/Krzanowski.tex}
-\input{ART_Leciejewski/Leciejewski.tex}
-\input{ART_Tambassi/Tambassi.tex}
-
-\input{ART_Bielecki/Bielecki.tex}
-
-\input{ART_Grygiel/Grygiel.tex}
-
-\input{ART_Sierotowicz/Sierotowicz.tex}
-
-
-\input{ART_Trombik/Trombik.tex}
+\input{ART_Israel/Israel.tex}
+\input{ART_Linsbichler/Linsbichler.tex}
+\input{ART_Dominiak/Dominiak.tex}
+\input{ART_Cordoba/Oliva.tex}
+\input{ART_Machaj/Machaj.tex}
+\input{ART_McGee/McGee.tex}
+\input{ART_Turowski/lachmann.tex}
+\input{ART_Ceglarska/Ceglarska.tex}
+\input{ART_Wysocki_etal/Wysocki_etal.tex}
+\input{ART_Posvanc/Posvanc.tex}
+\input{ART_Slenzok/Slenzok.tex}
+\input{ART_Megger/Megger.tex}
+\input{ART_Nowakowski/Nowakowski.tex}
 
 
 
@@ -1445,11 +1486,14 @@ backend=biber]{biblatex}
 %\sekcja{Essays}{Eseje}
 %\sekcja{Proceedings of the PAU Commission\\\ on the Philosophy of Science}{Z prac Komisji Filozofii Nauk PAU}
 %\sekcja{Reports}{Sprawozdania}
+\sekcja{Discussions and polemics}{Dyskusje i polemiki}
 
+\input{DIS_Wysocki/Wysocki.tex}
+\input{DIS_Block/Block.tex}
 
+%
 \sekcja{Review essays}{Artykuły recenzyjne}
-\input{REV_Anderwald/Anderwald.tex}
-\input{REV_Krzanowski/Krzanowski.tex}
+\input{REV_Czyzniewski/Czyzniewski.tex}
 
 
 %\sekcja{Review articles}{Artykuły recenzyjne}
